@@ -5,6 +5,62 @@ export const ContainerQuemSomos = styled.section`
     /* padding: 10rem 15rem; */
     /* background-color: #0005; */
 
+    .boxtxt1 {
+        margin-bottom: 15rem;
+        h2 {
+            margin-bottom: 2rem;
+            color: var(--color07);
+        }
+    }
+
+    .boxtxt2 {
+        margin-bottom: 5rem;
+    }
+
+    .swiper {
+        margin-bottom: 20rem;
+        padding-bottom: 3rem;
+        /* background-color: var(--color08);
+        border-radius: 2rem; */
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: calc(50% - 3.5rem);
+            width: 4rem;
+            height: 4rem;
+            &::after {
+                content: '';
+                background-image: url(./assets/img/arrow1.png);
+                background-size: contain;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .swiper-button-prev {
+            transform: rotateY(180deg);
+        }
+        
+        .cardSlide {
+            width: 85%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 5rem 4rem;
+            background-color: var(--color08);
+            border-radius: 2rem;
+            box-shadow: 0rem 0.3rem 0.5rem 0.1rem #0003;
+            
+            .imgSlide {
+                width: 40rem;
+                max-width: 80%;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+
     .boxtxt3 {
         display: flex;
         flex-direction: column;
