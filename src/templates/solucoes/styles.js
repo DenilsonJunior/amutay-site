@@ -2,14 +2,18 @@ import styled from "styled-components"
 
 export const ContainerSolucoes = styled.section`
     /* background-color: #0005; */
+    padding-top: 8.2vw;
+    padding-bottom: 8.2vw;
 
     h2 {
+        font-size: 4.6vw;
+        margin: 0;
         color: var(--color07);
     }
 
     .swiper {
-        margin-top: 10rem;
-        padding-bottom: 4rem;
+        margin-top: 6vw;
+        padding-bottom: 4.7vw;
 
         .swiper-button-prev,
         .swiper-button-next {
@@ -18,7 +22,9 @@ export const ContainerSolucoes = styled.section`
 
         .swiper-pagination {
             .swiper-pagination-bullet {
-                border: solid .2rem var(--color07);
+                width: .9vw;
+                height: .9vw;
+                border: solid .15vw var(--color07);
                 opacity: 1;
                 border-radius: 100%;
                 background-color: transparent;
@@ -33,7 +39,7 @@ export const ContainerSolucoes = styled.section`
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-            width: 30vw;
+            width: 35vw;
             aspect-ratio: 1/1;
             margin: 0 auto;
             display: flex;
@@ -41,12 +47,14 @@ export const ContainerSolucoes = styled.section`
             align-items: center;
             justify-content: center;
             img {
-                width: 55%;
+                width: 60%;
+                margin-top: -5vw;
             }
             h3 {
                 text-align: center;
-                margin-top: -4rem;
+                margin-top: -2.5vw;
                 color: white;
+                font-size: 2vw;
             }
         }
     }

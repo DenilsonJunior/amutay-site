@@ -14,9 +14,9 @@ function App() {
         <>
             <Capa />
             <QuemSomos />
-            {/* <PorQue />
+            <PorQue />
             <Solucoes />
-            <Contatos /> */}
+            {/* <Contatos /> */}
         </>
     )
 }
