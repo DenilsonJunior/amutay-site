@@ -105,7 +105,7 @@ export const ContainerQuemSomos = styled.section`
         display: flex;
         flex-direction: column;
         gap: 3.4vw;
-        margin: 18.8vw 0 0;
+        margin: 18.3vw 0 0;
         p {
             font-size: 2.1vw;
             line-height: 3.12vw;
@@ -123,7 +123,7 @@ export const ContainerQuemSomos = styled.section`
         display: flex;
         justify-content: center;
         gap: 3vw;
-        margin: 14vw 0 0;
+        margin: 10vw 0 0;
 
         @media (max-width: 1000px) {
             flex-direction: column;

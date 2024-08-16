@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const ContainerPorQue = styled.section`
     /* background-color: #0005; */
-    padding-top: 10vw;
+    padding-top: 8vw;
     padding-bottom: 10vw;
 
     h2 {

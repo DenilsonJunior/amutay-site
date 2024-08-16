@@ -10,8 +10,9 @@
 }
 
 body {
-    background-image: url(./assets/img/croqui.png);
-    background-size: cover;
+    /* background-image: url(./assets/img/croqui.png); */
+    background-image: url(./assets/img/bgtotal.png);
+    background-size: contain;
     text-wrap: wrap;
 }
 

@@ -16,7 +16,7 @@ export const ContainerSolucoes = styled.section`
 
     .swiper {
         margin-top: 6vw;
-        padding-bottom: 4.7vw;
+        padding-bottom: 3.5vw;
 
         .swiper-button-prev,
         .swiper-button-next {
