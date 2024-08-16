@@ -2,10 +2,20 @@ import styled from "styled-components"
 
 export const ContainerPorQue = styled.section`
     /* background-color: #0005; */
-    padding-top: 8vw;
+    padding-top: 18vw;
     padding-bottom: 10vw;
+    position: relative;
+
+    .fumaca {
+        position: absolute;
+        width: 155vw;
+        top: 4vw;
+        left: -25vw;
+    }
 
     h2 {
+        position: relative;
+        z-index: 1;
         font-size: 4.6vw;
         margin: 0;
         color: var(--color07);
@@ -15,6 +25,8 @@ export const ContainerPorQue = styled.section`
     }
 
     video {
+        position: relative;
+        z-index: 1;
         width: 100%;
         border-radius: 2rem;
         margin-top: 2.5vw;
@@ -23,6 +35,8 @@ export const ContainerPorQue = styled.section`
     }
 
     .boxText1 {
+        position: relative;
+        z-index: 1;
         margin-top: 15.5vw;
         display: flex;
         flex-direction: column;

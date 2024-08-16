@@ -4,6 +4,8 @@ function PorQue() {
 
     return (
         <ContainerPorQue className='max-conteudo'>
+            <img className='fumaca' src="./assets/img/fmc2.png" alt="" />
+
             <h2>Porque Amutay?</h2>
             <video src="" controls poster='./assets/img/video.png'></video>
             <div className="boxText1">

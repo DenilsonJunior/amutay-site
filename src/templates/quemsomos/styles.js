@@ -2,9 +2,19 @@ import styled from "styled-components"
 
 export const ContainerQuemSomos = styled.section`
     width: 100%;
-    padding-bottom: 10vw;
+    padding-bottom: 5vw;
+    position: relative;
+    
+    .fumaca {
+        width: 150vw;
+        position: absolute;
+        top: 25vw;
+        left: -25vw;
+    }
 
     .boxtxt1 {
+        position: relative;
+        z-index: 1;
         h2 {
             font-size: 4.6vw;
             margin: 5% 0 .8%;
@@ -27,6 +37,8 @@ export const ContainerQuemSomos = styled.section`
     }
 
     .boxtxt2 {
+        position: relative;
+        z-index: 1;
         margin: 19vw 0 0;
 
         p {
@@ -40,6 +52,8 @@ export const ContainerQuemSomos = styled.section`
     }
 
     .swiper {
+        position: relative;
+        z-index: 1;
         margin: 7vw 0 0;
         padding-bottom: 2vw;
 
@@ -106,6 +120,8 @@ export const ContainerQuemSomos = styled.section`
         flex-direction: column;
         gap: 3.4vw;
         margin: 18.3vw 0 0;
+        position: relative;
+        z-index: 1;
         p {
             font-size: 2.1vw;
             line-height: 3.12vw;
@@ -119,6 +135,8 @@ export const ContainerQuemSomos = styled.section`
     }
     
     .flexCards {
+        position: relative;
+        z-index: 1;
         width: 100%;
         display: flex;
         justify-content: center;

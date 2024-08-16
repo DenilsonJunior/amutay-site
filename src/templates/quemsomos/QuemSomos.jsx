@@ -12,6 +12,8 @@ function QuemSomos() {
 
     return (
         <ContainerQuemSomos className='max-conteudo'>
+
+            <img className='fumaca' src="./assets/img/fmc1.png" alt="" />
             
             <div className='boxtxt1'>
                 <h2>QuemSomos?</h2>
