@@ -14,13 +14,13 @@ function QuemSomos() {
         <ContainerQuemSomos className='max-conteudo'>
             
             <div className='boxtxt1'>
-                <h2>QuemSomos</h2>
+                <h2>QuemSomos?</h2>
                 <p><b>Desenvolvemos experiências personalizadas e de alto impacto.</b></p>
                 <p>Oferecemos consultoria, gestão e elaboração de <b>soluções educacionais</b> voltadas para o desenvolvimento de trilhas de aprendizagem com <b>formação</b> <b>virtual</b>, <b>híbrida</b> e <b>presencial</b>.</p>
             </div>
 
             <div className='boxtxt2'>
-                <h3>A paixão e o comprometimento que colocamos em cada projeto desenvolvido são resultado de um conjunto variado de vivências. Os caminhos pessoais e profissionais de quem compõe a nossa empresa constroem pontes que unem conhecimentos, competências e qualidades.</h3>
+                <p>A paixão e o comprometimento que colocamos em cada projeto desenvolvido são resultado de um conjunto variado de vivências. Os caminhos pessoais e profissionais de quem compõe a nossa empresa constroem pontes que unem conhecimentos, competências e qualidades.</p>
             </div>
 
             <Swiper
@@ -28,7 +28,7 @@ function QuemSomos() {
                 centeredSlides={true}
                 slidesPerView={1}
                 autoplay={{
-                    delay: 5000,
+                    delay: 50000,
                     disableOnInteraction: false,
                 }}
                 pagination={{

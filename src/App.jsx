@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import '../public/assets/fonts/amutay/stylesheet.css';
 import Capa from './templates/capa/Capa'
 import QuemSomos from './templates/quemsomos/QuemSomos'
 import PorQue from './templates/porque/PorQue'
@@ -11,11 +12,11 @@ function App() {
 
     return (
         <>
-            {/* <Capa /> */}
+            <Capa />
             <QuemSomos />
-            {/* <PorQue /> */}
-            {/* <Solucoes /> */}
-            {/* <Contatos /> */}
+            {/* <PorQue />
+            <Solucoes />
+            <Contatos /> */}
         </>
     )
 }
