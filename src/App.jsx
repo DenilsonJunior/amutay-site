@@ -16,7 +16,7 @@ function App() {
             <QuemSomos />
             <PorQue />
             <Solucoes />
-            {/* <Contatos /> */}
+            <Contatos />
         </>
     )
 }

@@ -9,6 +9,9 @@ export const ContainerSolucoes = styled.section`
         font-size: 4.6vw;
         margin: 0;
         color: var(--color07);
+        @media (max-width: 1000px) {
+            color: red;
+        }
     }
 
     .swiper {
@@ -55,6 +58,9 @@ export const ContainerSolucoes = styled.section`
                 margin-top: -2.5vw;
                 color: white;
                 font-size: 2vw;
+                @media (max-width: 1000px) {
+                    color: red;
+                }
             }
         }
     }

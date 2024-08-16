@@ -9,6 +9,9 @@ export const ContainerPorQue = styled.section`
         font-size: 4.6vw;
         margin: 0;
         color: var(--color07);
+        @media (max-width: 1000px) {
+            color: red;
+        }
     }
 
     video {
@@ -27,6 +30,9 @@ export const ContainerPorQue = styled.section`
             line-height: 3.3vw;
             margin: 2.5vw 0 0;
             font-size: 2.3vw;
+            @media (max-width: 1000px) {
+                color: red;
+            }
             b {
                 font-size: 2.3vw;
             }
