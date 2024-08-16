@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const ContainerQuemSomos = styled.section`
     width: 100%;
+    padding-bottom: 10vw;
 
     .boxtxt1 {
         h2 {
@@ -84,7 +85,7 @@ export const ContainerQuemSomos = styled.section`
             align-items: center;
             padding: 2.5vw 5vw 5.1vw;
             background-color: var(--color08);
-            border-radius: 2rem;
+            border-radius: 4rem;
             box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
             
             .imgSlide {
@@ -103,12 +104,16 @@ export const ContainerQuemSomos = styled.section`
     .boxtxt3 {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        margin-bottom: 10rem;
+        gap: 3.4vw;
+        margin: 18.8vw 0 0;
         p {
-            font-size: 1.9rem;
+            font-size: 2.1vw;
+            line-height: 3.12vw;
+            @media (max-width: 1000px) {
+                color: red;
+            }
             b {
-                font-size: 1.9rem;
+                font-size: 2.34vw;
             }
         }
     }
@@ -117,7 +122,8 @@ export const ContainerQuemSomos = styled.section`
         width: 100%;
         display: flex;
         justify-content: center;
-        gap: 2rem;
+        gap: 3vw;
+        margin: 14vw 0 0;
 
         @media (max-width: 1000px) {
             flex-direction: column;
@@ -132,19 +138,19 @@ export const ContainerQuemSomos = styled.section`
             align-items: center;
             position: relative;
             margin-top: 7.5rem;
-            border-radius: 1.5rem;
-            box-shadow: 0rem 0.3rem 0.5rem 0.1rem #0003;
+            border-radius: 4rem;
+            box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
 
             .pers {
-                width: 20rem;
+                width: 20vw;
                 position: relative;
-                margin-top: -10rem;
+                margin-top: -10vw;
                 filter: drop-shadow(0rem 0.1rem 1rem #0002);
             }
 
             .boxtext {
                 width: 100%;
-                padding: 2rem 2rem 8rem;
+                padding: 3vw 1.2vw 11vw;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -154,10 +160,20 @@ export const ContainerQuemSomos = styled.section`
                 h3 {
                     color: var(--color07);
                     text-align: center;
+                    font-size: 2.2vw;
+                    @media (max-width: 1000px) {
+                        color: red;
+                    }
                 }
 
                 p {
                     text-align: center;
+                    font-size: 1.51vw;
+                    line-height: 2.55vw;
+                    margin: 1.5vw 0 0;
+                    @media (max-width: 1000px) {
+                        color: red;
+                    }
                 }
             }
 
@@ -165,28 +181,29 @@ export const ContainerQuemSomos = styled.section`
                 background-color: var(--color07);
                 display: flex;
                 align-items: center;
-                gap: 1rem;
-                padding: .7rem 2rem .7rem .7rem;
-                border-radius: 1.8rem;
+                gap: 1.5vw;
+                padding: .8rem 3rem .8rem .8rem;
+                border-radius: 3rem;
                 border: none;
                 position: absolute;
-                bottom: 2rem;
-                box-shadow: 0rem 0.3rem 0.5rem 0.1rem #0003;
+                bottom: 3.5vw;
+                box-shadow: 0rem 0.3rem 1rem 0.5rem #0003;
                 .box {
                     background-color: white;
-                    padding: .4rem .6rem;
+                    padding: .8rem 1.5rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    border-radius: 1rem;
+                    border-radius: 2.5rem;
                     img {
-                        width: 2rem;
+                        width: 2vw;
                     }
                 }
                 p {
                     color: white;
                     margin: 0;
-                    font-weight: bold;
+                    font-weight: 600;
+                    font-size: 1.4vw;
                 }
             }
         }
