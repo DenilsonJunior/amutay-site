@@ -24,7 +24,7 @@ body {
     overflow: hidden;
     /* background-color: #0005; */
 
-    @media (max-width: 1000px) {
+    @media (max-width: 720px) {
         padding: 0 2rem;
     }
 }

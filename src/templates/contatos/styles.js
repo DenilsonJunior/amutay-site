@@ -10,7 +10,7 @@ export const ContainerContatos = styled.section`
     background-repeat: no-repeat;
     padding-top: 5vw;
     padding-bottom: 15vw;
-    @media (max-width: 1000px) {
+    @media (max-width: 720px) {
         padding-top: 10vw;
     }
 
@@ -18,14 +18,14 @@ export const ContainerContatos = styled.section`
         display: flex;
         gap: 1.5rem;
         margin: 10vw 0 3vw;
-        @media (max-width: 1000px) {
+        @media (max-width: 720px) {
             margin: 17vw 0 3vw;
         }
         
         a {
             width: 3.5vw;
             transition-duration: .3s;
-            @media (max-width: 1000px) {
+            @media (max-width: 720px) {
                 width: 8vw;
             }
 
@@ -42,7 +42,7 @@ export const ContainerContatos = styled.section`
         text-align: center;
         font-size: 1.4vw;
         color: white;
-        @media (max-width: 1000px) {
+        @media (max-width: 720px) {
             line-height: 5vw;
             font-size: 3.5vw;
         }

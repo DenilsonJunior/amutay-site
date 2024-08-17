@@ -10,7 +10,7 @@ export const ContainerCapa = styled.section`
     display: flex;
     align-items: center;
     padding-top: 10%;
-    @media (max-width: 1000px) {
+    @media (max-width: 720px) {
         aspect-ratio: 1.35 / 1;
     }
 
@@ -20,7 +20,7 @@ export const ContainerCapa = styled.section`
         padding-bottom: 3.6%;
         /* padding-bottom: 4rem; */
         /* background-color: #0005; */
-        @media (max-width: 1000px) {
+        @media (max-width: 720px) {
             padding-bottom: 10%;
         }
 
@@ -49,7 +49,7 @@ export const ContainerCapa = styled.section`
             width: 60vw;
             height: 100%;
 
-            @media (max-width: 1000px) {
+            @media (max-width: 720px) {
                 font-size: 6.8vw;
                 width: 85vw;
             }
@@ -62,7 +62,7 @@ export const ContainerCapa = styled.section`
             display: flex;
             align-items: center;
 
-            @media (max-width: 1000px) {
+            @media (max-width: 720px) {
                 width: 85vw;
                 font-size: 5.5vw;
             }
