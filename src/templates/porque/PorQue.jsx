@@ -3,7 +3,7 @@ import { ContainerPorQue } from './styles.js';
 function PorQue() {
 
     return (
-        <ContainerPorQue className='max-conteudo'>
+        <ContainerPorQue className='max-conteudo' id="porque">
             <img className='fumaca' src="./assets/img/fmc2.png" alt="" />
 
             <h2>Porque Amutay?</h2>

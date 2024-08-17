@@ -10,7 +10,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 function Solucoes() {
 
     return (
-        <ContainerSolucoes className='max-conteudo'>
+        <ContainerSolucoes className='max-conteudo' id="solucoes">
             <h2>Soluções</h2>
             <Swiper
                 spaceBetween={50}

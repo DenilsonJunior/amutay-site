@@ -9,6 +9,11 @@
     text-wrap: wrap;
 }
 
+html {
+    scroll-behavior: smooth;
+    text-wrap: pretty;
+}
+
 body {
     /* background-image: url(./assets/img/croqui.png); */
     background-image: url(./assets/img/bgtotal.png);
@@ -76,4 +81,24 @@ p {
             height: .8rem;
         }
     }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

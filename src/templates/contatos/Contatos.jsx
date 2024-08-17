@@ -3,7 +3,7 @@ import { ContainerContatos } from './styles.js';
 function Contatos() {
 
     return (
-        <ContainerContatos className='max-conteudo'>
+        <ContainerContatos className='max-conteudo' id="contatos">
             <div className='redes'>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                     <img src="./assets/img/ico-mail.png" alt="" />

@@ -11,12 +11,12 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 function QuemSomos() {
 
     return (
-        <ContainerQuemSomos className='max-conteudo'>
+        <ContainerQuemSomos className='max-conteudo' id="quem">
 
             <img className='fumaca' src="./assets/img/fmc1.png" alt="" />
             
             <div className='boxtxt1'>
-                <h2>QuemSomos?</h2>
+                <h2>Quem Somos?</h2>
                 <p><b>Desenvolvemos experiências personalizadas e de alto impacto.</b></p>
                 <p>Oferecemos consultoria, gestão e elaboração de <b>soluções educacionais</b> voltadas para o desenvolvimento de trilhas de aprendizagem com <b>formação</b> <b>virtual</b>, <b>híbrida</b> e <b>presencial</b>.</p>
             </div>
