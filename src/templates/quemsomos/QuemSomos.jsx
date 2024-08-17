@@ -58,7 +58,6 @@ function QuemSomos() {
                         <p>Trajetórias profissionais que contam com experiência em sala de aula, formação de professores, educação corporativa, projetos sociais, entre outros.</p>
                     </div>
                 </SwiperSlide>
-                ...
             </Swiper>
 
             <div className='boxtxt3'>

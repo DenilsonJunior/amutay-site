@@ -10,7 +10,10 @@ export const ContainerPorQue = styled.section`
         position: absolute;
         width: 155vw;
         top: 4vw;
-        left: -25vw;
+        left: -35vw;
+        @media (max-width: 1000px) {
+            width: 170vw;
+        }
     }
 
     h2 {
@@ -20,7 +23,7 @@ export const ContainerPorQue = styled.section`
         margin: 0;
         color: var(--color07);
         @media (max-width: 1000px) {
-            color: red;
+            font-size: 6vw;
         }
     }
 
@@ -32,6 +35,9 @@ export const ContainerPorQue = styled.section`
         margin-top: 2.5vw;
         border-radius: 4rem;
         box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
+        @media (max-width: 1000px) {
+            border-radius: 1rem;
+        }
     }
 
     .boxText1 {
@@ -45,10 +51,14 @@ export const ContainerPorQue = styled.section`
             margin: 2.5vw 0 0;
             font-size: 2.3vw;
             @media (max-width: 1000px) {
-                color: red;
+                line-height: 5vw;
+                font-size: 4vw;
             }
             b {
                 font-size: 2.3vw;
+                @media (max-width: 1000px) {
+                    font-size: 4vw;
+                }
             }
         }
     }

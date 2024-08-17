@@ -20,18 +20,22 @@ export const ContainerQuemSomos = styled.section`
             margin: 5% 0 .8%;
             color: var(--color07);
             @media (max-width: 1000px) {
-                color: red;
+                font-size: 6vw;
+                margin: 10% 0 5%;
             }
         }
         p {
             font-size: 2.1vw;
             line-height: 3.12vw;
             @media (max-width: 1000px) {
-                color: red;
+                font-size: 4vw;
+                line-height: 5vw;
             }
-
             b {
                 font-size: 2.34vw;
+                @media (max-width: 1000px) {
+                    font-size: 4vw;
+                }
             }
         }
     }
@@ -46,7 +50,8 @@ export const ContainerQuemSomos = styled.section`
             line-height: 4vw;
             font-weight: 600;
             @media (max-width: 1000px) {
-                color: red;
+                font-size: 4.5vw;
+                line-height: 5vw;
             }
         }
     }
@@ -55,13 +60,21 @@ export const ContainerQuemSomos = styled.section`
         position: relative;
         z-index: 1;
         margin: 7vw 0 0;
-        padding-bottom: 2vw;
+        padding-bottom: 5vw;
+        @media (max-width: 1000px) {
+            padding-bottom: 9vw;
+        }
 
         .swiper-button-prev,
         .swiper-button-next {
             top: calc(50% - 2.5vw);
             width: 2.5vw;
             height: 2.5vw;
+            @media (max-width: 1000px) {
+                top: calc(50% - 2.5vw);
+                width: 5vw;
+                height: 5vw;
+            }
             &::after {
                 content: '';
                 background-image: url(./assets/img/arrow1.png);
@@ -75,6 +88,11 @@ export const ContainerQuemSomos = styled.section`
         }
         .swiper-button-prev {
             transform: rotateY(180deg);
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
         }
 
         .swiper-pagination {
@@ -96,6 +114,10 @@ export const ContainerQuemSomos = styled.section`
             background-color: var(--color08);
             border-radius: 4rem;
             box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
+            @media (max-width: 1000px) {
+                border-radius: 1rem;
+                width: calc(100% - 8rem);
+            }
             
             .imgSlide {
                 width: 41%;
@@ -104,7 +126,7 @@ export const ContainerQuemSomos = styled.section`
                 text-align: center;
                 font-size: 1.93vw;
                 @media (max-width: 1000px) {
-                    color: red;
+                    font-size: 4vw;
                 }
             }
         }
@@ -121,10 +143,14 @@ export const ContainerQuemSomos = styled.section`
             font-size: 2.1vw;
             line-height: 3.12vw;
             @media (max-width: 1000px) {
-                color: red;
+                line-height: 5vw;
+                font-size: 4vw;
             }
             b {
                 font-size: 2.34vw;
+                @media (max-width: 1000px) {
+                    font-size: 4vw;
+                }
             }
         }
     }
@@ -153,12 +179,19 @@ export const ContainerQuemSomos = styled.section`
             margin-top: 7.5rem;
             border-radius: 4rem;
             box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
+            @media (max-width: 1000px) {
+                border-radius: 1rem;
+            }
 
             .pers {
                 width: 20vw;
                 position: relative;
                 margin-top: -10vw;
                 filter: drop-shadow(0rem 0.1rem 1rem #0002);
+                @media (max-width: 1000px) {
+                    width: 40vw;
+                    margin-top: -20VW;
+                }
             }
 
             .boxtext {
@@ -169,13 +202,16 @@ export const ContainerQuemSomos = styled.section`
                 align-items: center;
                 gap: 2rem;
                 position: relative;
+                @media (max-width: 1000px) {
+                    padding: 3vw 1.2vw 20vw;
+                }
 
                 h3 {
                     color: var(--color07);
                     text-align: center;
                     font-size: 2.2vw;
                     @media (max-width: 1000px) {
-                        color: red;
+                        font-size: 5vw;
                     }
                 }
 
@@ -185,7 +221,8 @@ export const ContainerQuemSomos = styled.section`
                     line-height: 2.55vw;
                     margin: 1.5vw 0 0;
                     @media (max-width: 1000px) {
-                        color: red;
+                        line-height: 5vw;
+                        font-size: 4vw;
                     }
                 }
             }
@@ -210,6 +247,9 @@ export const ContainerQuemSomos = styled.section`
                     border-radius: 2.5rem;
                     img {
                         width: 2vw;
+                        @media (max-width: 1000px) {
+                            width: 3vw;
+                        }
                     }
                 }
                 p {
@@ -217,6 +257,10 @@ export const ContainerQuemSomos = styled.section`
                     margin: 0;
                     font-weight: 600;
                     font-size: 1.4vw;
+                    @media (max-width: 1000px) {
+                        line-height: 5vw;
+                        font-size: 4vw;
+                    }
                 }
             }
         }

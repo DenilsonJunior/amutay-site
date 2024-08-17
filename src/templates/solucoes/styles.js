@@ -10,13 +10,17 @@ export const ContainerSolucoes = styled.section`
         margin: 0;
         color: var(--color07);
         @media (max-width: 1000px) {
-            color: red;
+            font-size: 6vw;
         }
     }
 
     .swiper {
         margin-top: 6vw;
         padding-bottom: 3.5vw;
+        @media (max-width: 1000px) {
+            margin-top: 10vw;
+            padding-bottom: 3.5vw;
+        }
 
         .swiper-button-prev,
         .swiper-button-next {
@@ -44,6 +48,10 @@ export const ContainerSolucoes = styled.section`
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            @media (max-width: 1000px) {
+                width: 80vw;
+            }
+            
             img {
                 width: 60%;
                 margin-top: -5vw;
@@ -54,7 +62,7 @@ export const ContainerSolucoes = styled.section`
                 color: white;
                 font-size: 2vw;
                 @media (max-width: 1000px) {
-                    color: red;
+                    font-size: 4.2vw;
                 }
             }
         }

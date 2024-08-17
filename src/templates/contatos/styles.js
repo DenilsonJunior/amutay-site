@@ -15,8 +15,15 @@ export const ContainerContatos = styled.section`
         display: flex;
         gap: 1rem;
         margin: 10vw 0 3vw;
+        @media (max-width: 1000px) {
+            margin: 17vw 0 3vw;
+        }
+        
         a {
             width: 3.5vw;
+            @media (max-width: 1000px) {
+                width: 8vw;
+            }
             img {
                 width: 100%;
             }
@@ -28,7 +35,8 @@ export const ContainerContatos = styled.section`
         font-size: 1.4vw;
         color: white;
         @media (max-width: 1000px) {
-            color: red;
+            line-height: 5vw;
+            font-size: 3.5vw;
         }
     }
 `
