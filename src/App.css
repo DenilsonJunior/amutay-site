@@ -69,6 +69,10 @@ p {
     }
 }
 
+a {
+    font-family: 'Montserrat Alternates';
+}
+
 .swiper-pagination {
     .swiper-pagination-bullet {
         width: .9vw;

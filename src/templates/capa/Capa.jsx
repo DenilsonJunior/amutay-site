@@ -11,7 +11,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 function Capa() {
 
     return (
-        <ContainerCapa>
+        <ContainerCapa id='#capa'>
             <div className='max-conteudo'>
                 <Swiper
                     spaceBetween={50}
