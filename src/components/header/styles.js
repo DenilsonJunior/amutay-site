@@ -30,10 +30,11 @@ export const HeaderContainer = styled.header`
         display: none;  /* Oculta o botão em telas maiores */
         align-items: center;
         justify-content: center;
-        font-size: 9vw;
+        font-size: 8vw;
         position: relative;
         z-index: 2;
         transition-duration: .2s;
+        margin-top: 1vw;
         margin-right: 2vw;
         filter: ${props => (props.$scrolled ? 'drop-shadow(0px 1px 2px #fff)' : 'none')};
         &:hover {
