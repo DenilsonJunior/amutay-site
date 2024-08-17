@@ -1,26 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import { HeaderContainer } from './styles.js';
-// import ModoEscuroButton from './ModoEscuroButton.jsx';
 
 const Header = () => {
     const [isTrue, setIsTrue] = useState(false);
-    // const [modoEscuro, setModoEscuro] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
-        // Seleciona todos os elementos <a> na página
+        const handleScroll = () => {
+            const capa = document.getElementById('capa');
+            const capaHeight = capa?.offsetHeight || 0;
+
+            if (window.scrollY > capaHeight) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
         let clickLinks = document.getElementsByClassName('boxMenu')[0]?.getElementsByTagName('a');
 
-        // Função para lidar com o clique
         const handleClick = () => setIsTrue(prevIsTrue => !prevIsTrue);
 
-        // Adiciona os event listeners
         if (clickLinks) {
             for (let i = 0; i < clickLinks.length; i++) {
                 clickLinks[i].addEventListener('click', handleClick);
             }
         }
 
-        // Remove os event listeners quando o componente for desmontado
         return () => {
             if (clickLinks) {
                 for (let i = 0; i < clickLinks.length; i++) {
@@ -31,36 +45,34 @@ const Header = () => {
     }, [isTrue]);
 
     return (
-        <HeaderContainer>
-            {/* <ModoEscuroButton modoEscuro={modoEscuro} setModoEscuro={setModoEscuro} /> */}
-            <a href="#capa" target="_blank" rel="noopener noreferrer">
-                <img className='logo' src="./assets/img/logo.png" alt="" />
-            </a>
+        <HeaderContainer $isTrue={isTrue} $scrolled={scrolled}>
+            {/* <img className='logo' src="./assets/img/logo.png" alt="Logo" /> */}
             
             <button 
                 onClick={() => setIsTrue(!isTrue)}
-                aria-expanded={!isTrue}
+                aria-expanded={isTrue}
                 aria-label="Menu de navegação"
             >
                 {isTrue ? '✖' : '☰'}
             </button>
             
-            {isTrue && (
-                <div className='boxMenu'>
-                    <a href="#quem">
-                        <p>Quem somos</p>
-                    </a>
-                    <a href="#porque">
-                        <p>Porque</p>
-                    </a>
-                    <a href="#solucoes">
-                        <p>Soluções</p>
-                    </a>
-                    <a href="#contatos">
-                        <p>Contatos</p>
-                    </a>
-                </div>
-            )}
+            <div className='boxMenu'>
+                <a href="#capa">
+                    <p>Home</p>
+                </a>
+                <a href="#quem">
+                    <p>Quem somos</p>
+                </a>
+                <a href="#porque">
+                    <p>Porque</p>
+                </a>
+                <a href="#solucoes">
+                    <p>Soluções</p>
+                </a>
+                <a href="#contatos">
+                    <p>Contatos</p>
+                </a>
+            </div>
         </HeaderContainer>
     );
 };

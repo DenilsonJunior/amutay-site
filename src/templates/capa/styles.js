@@ -14,6 +14,18 @@ export const ContainerCapa = styled.section`
         aspect-ratio: 1.35 / 1;
     }
 
+    img.logo {
+        width: 4.5vw;
+        filter: drop-shadow(0px 1px 2px #333);
+        position: absolute;
+        top: 2vw;
+        left: 4vw;
+
+        @media (max-width: 720px) {
+            width: 9vw;
+        }
+    }
+
     .swiper {
         color: white;
         margin-top: 1%;

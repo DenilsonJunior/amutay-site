@@ -11,7 +11,8 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 function Capa() {
 
     return (
-        <ContainerCapa id='#capa'>
+        <ContainerCapa id='capa'>
+            <img className='logo' src="./assets/img/logo.png" alt="Logo" />
             <div className='max-conteudo'>
                 <Swiper
                     spaceBetween={50}
