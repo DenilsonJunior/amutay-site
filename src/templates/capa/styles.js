@@ -50,8 +50,8 @@ export const ContainerCapa = styled.section`
             height: 100%;
 
             @media (max-width: 1000px) {
-                font-size: 6vw;
-                width: 80vw;
+                font-size: 6.5vw;
+                width: 85vw;
             }
         }
 
@@ -63,8 +63,8 @@ export const ContainerCapa = styled.section`
             align-items: center;
 
             @media (max-width: 1000px) {
-                width: 80vw;
-                font-size: 4vw;
+                width: 75vw;
+                font-size: 5vw;
             }
         }
     }
