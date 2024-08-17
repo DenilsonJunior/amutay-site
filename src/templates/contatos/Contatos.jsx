@@ -18,8 +18,8 @@ function Contatos() {
                     <img src="./assets/img/ico-insta.png" alt="" />
                 </a>
             </div>
-            <p>Rua Nascimento Silva, 107 - Rio de JAneiro / RJ</p>
-            <p>Telefone: (21) 99999-9999 ! amutay@amutay.com.br</p>
+            <p>Rua Nascimento Silva, 107 - Rio de Janeiro / RJ</p>
+            <p>Telefone: (21) 99999-9999 | amutay@amutay.com.br</p>
         </ContainerContatos>
     );
 }

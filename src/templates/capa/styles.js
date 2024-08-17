@@ -10,12 +10,8 @@ export const ContainerCapa = styled.section`
     display: flex;
     align-items: center;
     padding-top: 10%;
-
-    .imgCapa {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        opacity: .1;
+    @media (max-width: 1000px) {
+        aspect-ratio: 1.4 / 1;
     }
 
     .swiper {
@@ -24,6 +20,9 @@ export const ContainerCapa = styled.section`
         padding-bottom: 3.6%;
         /* padding-bottom: 4rem; */
         /* background-color: #0005; */
+        @media (max-width: 1000px) {
+            padding-bottom: 10%;
+        }
 
         .swiper-button-prev,
         .swiper-button-next {
@@ -33,12 +32,7 @@ export const ContainerCapa = styled.section`
         .swiper-pagination {
             text-align: left;
             .swiper-pagination-bullet {
-                width: .9vw;
-                height: .9vw;
                 border: solid .15vw white;
-                opacity: 1;
-                border-radius: 100%;
-                background-color: transparent;
                 &.swiper-pagination-bullet-active {
                     background-color: white;
                 }
@@ -56,7 +50,8 @@ export const ContainerCapa = styled.section`
             height: 100%;
 
             @media (max-width: 1000px) {
-                color: red;
+                font-size: 6vw;
+                width: 80vw;
             }
         }
 
@@ -68,7 +63,8 @@ export const ContainerCapa = styled.section`
             align-items: center;
 
             @media (max-width: 1000px) {
-                color: red;
+                width: 80vw;
+                font-size: 4vw;
             }
         }
     }

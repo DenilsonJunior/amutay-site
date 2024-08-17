@@ -79,12 +79,7 @@ export const ContainerQuemSomos = styled.section`
 
         .swiper-pagination {
             .swiper-pagination-bullet {
-                width: .9vw;
-                height: .9vw;
                 border: solid .15vw var(--color07);
-                opacity: 1;
-                border-radius: 100%;
-                background-color: transparent;
                 &.swiper-pagination-bullet-active {
                     background-color: var(--color07);
                 }

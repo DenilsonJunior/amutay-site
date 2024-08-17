@@ -12,14 +12,13 @@ function Capa() {
 
     return (
         <ContainerCapa>
-            <img className='imgCapa' src="./assets/img/bg1.png" alt="" />
             <div className='max-conteudo'>
                 <Swiper
                     spaceBetween={50}
                     centeredSlides={true}
                     slidesPerView={1}
                     autoplay={{
-                        delay: 5000,
+                        delay: 50000,
                         disableOnInteraction: false,
                     }}
                     pagination={{

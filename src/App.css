@@ -63,3 +63,17 @@ p {
         font-weight: bold;
     }
 }
+
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        width: .9vw;
+        height: .9vw;
+        opacity: 1;
+        border-radius: 100%;
+        background-color: transparent;
+        @media (max-width: 1000px) {
+            width: .8rem;
+            height: .8rem;
+        }
+    }
+}
