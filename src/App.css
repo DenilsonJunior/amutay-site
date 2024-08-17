@@ -58,9 +58,9 @@ p {
     font-family: 'Montserrat Alternates';
     font-weight: 400;
     b {
+        font-family: 'Montserrat Alternates';
         font-size: 1.8rem;
-        font-family: 'Effra';
-        font-weight: bold;
+        font-weight: 700;
     }
 }
 
