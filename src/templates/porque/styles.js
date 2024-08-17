@@ -52,12 +52,12 @@ export const ContainerPorQue = styled.section`
             font-size: 2.3vw;
             @media (max-width: 1000px) {
                 line-height: 5vw;
-                font-size: 4vw;
+                font-size: 4.2vw;
             }
             b {
                 font-size: 2.3vw;
                 @media (max-width: 1000px) {
-                    font-size: 4vw;
+                    font-size: 4.2vw;
                 }
             }
         }

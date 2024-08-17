@@ -49,7 +49,7 @@ export const ContainerSolucoes = styled.section`
             align-items: center;
             justify-content: center;
             @media (max-width: 1000px) {
-                width: 80vw;
+                width: 90vw;
             }
             
             img {
@@ -62,7 +62,7 @@ export const ContainerSolucoes = styled.section`
                 color: white;
                 font-size: 2vw;
                 @media (max-width: 1000px) {
-                    font-size: 4.2vw;
+                    font-size: 4.4vw;
                 }
             }
         }

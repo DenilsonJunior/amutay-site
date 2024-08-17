@@ -11,7 +11,7 @@ export const ContainerCapa = styled.section`
     align-items: center;
     padding-top: 10%;
     @media (max-width: 1000px) {
-        aspect-ratio: 1.4 / 1;
+        aspect-ratio: 1.35 / 1;
     }
 
     .swiper {
@@ -50,7 +50,7 @@ export const ContainerCapa = styled.section`
             height: 100%;
 
             @media (max-width: 1000px) {
-                font-size: 6.5vw;
+                font-size: 6.8vw;
                 width: 85vw;
             }
         }
@@ -63,8 +63,8 @@ export const ContainerCapa = styled.section`
             align-items: center;
 
             @media (max-width: 1000px) {
-                width: 75vw;
-                font-size: 5vw;
+                width: 85vw;
+                font-size: 5.5vw;
             }
         }
     }

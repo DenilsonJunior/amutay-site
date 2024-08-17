@@ -10,10 +10,13 @@ export const ContainerContatos = styled.section`
     background-repeat: no-repeat;
     padding-top: 5vw;
     padding-bottom: 15vw;
+    @media (max-width: 1000px) {
+        padding-top: 10vw;
+    }
 
     .redes {
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
         margin: 10vw 0 3vw;
         @media (max-width: 1000px) {
             margin: 17vw 0 3vw;
@@ -21,8 +24,13 @@ export const ContainerContatos = styled.section`
         
         a {
             width: 3.5vw;
+            transition-duration: .3s;
             @media (max-width: 1000px) {
                 width: 8vw;
+            }
+
+            &:hover {
+                transform: scale(1.1);
             }
             img {
                 width: 100%;

@@ -6,10 +6,13 @@ export const ContainerQuemSomos = styled.section`
     position: relative;
     
     .fumaca {
-        width: 150vw;
+        width: 180vw;
         position: absolute;
         top: 25vw;
-        left: -25vw;
+        left: -40vw;
+        @media (max-width: 1000px) {
+            top: 62vw;
+        }
     }
 
     .boxtxt1 {
@@ -28,13 +31,13 @@ export const ContainerQuemSomos = styled.section`
             font-size: 2.1vw;
             line-height: 3.12vw;
             @media (max-width: 1000px) {
-                font-size: 4vw;
+                font-size: 4.4vw;
                 line-height: 5vw;
             }
             b {
                 font-size: 2.34vw;
                 @media (max-width: 1000px) {
-                    font-size: 4vw;
+                    font-size: 4.2vw;
                 }
             }
         }
@@ -74,6 +77,7 @@ export const ContainerQuemSomos = styled.section`
                 top: calc(50% - 2.5vw);
                 width: 5vw;
                 height: 5vw;
+                display: none;
             }
             &::after {
                 content: '';
@@ -116,7 +120,8 @@ export const ContainerQuemSomos = styled.section`
             box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
             @media (max-width: 1000px) {
                 border-radius: 1rem;
-                width: calc(100% - 8rem);
+                width: 95%;
+                padding: 2.5vw 2vw 5.1vw;
             }
             
             .imgSlide {
@@ -126,7 +131,7 @@ export const ContainerQuemSomos = styled.section`
                 text-align: center;
                 font-size: 1.93vw;
                 @media (max-width: 1000px) {
-                    font-size: 4vw;
+                    font-size: 4.2vw;
                 }
             }
         }
@@ -144,12 +149,12 @@ export const ContainerQuemSomos = styled.section`
             line-height: 3.12vw;
             @media (max-width: 1000px) {
                 line-height: 5vw;
-                font-size: 4vw;
+                font-size: 4.2vw;
             }
             b {
                 font-size: 2.34vw;
                 @media (max-width: 1000px) {
-                    font-size: 4vw;
+                    font-size: 4.2vw;
                 }
             }
         }
@@ -166,7 +171,7 @@ export const ContainerQuemSomos = styled.section`
 
         @media (max-width: 1000px) {
             flex-direction: column;
-            gap: 6rem;
+            gap: 15vw;
         }
 
         .card {
