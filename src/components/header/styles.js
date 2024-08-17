@@ -51,8 +51,13 @@ export const HeaderContainer = styled.header`
             color: var(--text-color);
             transition-duration: .2s;
             font-weight: 700;
+            font-size: 1.8vw;
             &:hover {
                 transform: scale(1.1);
+            }
+
+            @media (max-width: 720px) {
+                font-size: 4vw;
             }
         }
     }

@@ -45,10 +45,18 @@ const Header = () => {
             
             {isTrue && (
                 <div className='boxMenu'>
-                    <a href="#quem">Quem somos</a>
-                    <a href="#porque">Porque</a>
-                    <a href="#solucoes">Soluções</a>
-                    <a href="#contatos">Contatos</a>
+                    <a href="#quem">
+                        <p>Quem somos</p>
+                    </a>
+                    <a href="#porque">
+                        <p>Porque</p>
+                    </a>
+                    <a href="#solucoes">
+                        <p>Soluções</p>
+                    </a>
+                    <a href="#contatos">
+                        <p>Contatos</p>
+                    </a>
                 </div>
             )}
         </HeaderContainer>
