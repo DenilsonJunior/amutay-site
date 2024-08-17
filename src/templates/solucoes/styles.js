@@ -6,7 +6,8 @@ export const ContainerSolucoes = styled.section`
     padding-bottom: 8.2vw;
 
     h2 {
-        font-size: 4.6vw;
+        /* font-size: 4.6vw; */
+        font-size: 3vw;
         margin: 0;
         color: var(--color07);
         @media (max-width: 720px) {

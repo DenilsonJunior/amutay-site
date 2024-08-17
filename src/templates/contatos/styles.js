@@ -17,7 +17,7 @@ export const ContainerContatos = styled.section`
     .redes {
         display: flex;
         gap: 1.5rem;
-        margin: 10vw 0 3vw;
+        margin: 15vw 0 1vw;
         @media (max-width: 720px) {
             margin: 17vw 0 3vw;
         }

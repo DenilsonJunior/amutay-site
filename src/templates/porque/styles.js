@@ -19,7 +19,8 @@ export const ContainerPorQue = styled.section`
     h2 {
         position: relative;
         z-index: 1;
-        font-size: 4.6vw;
+        /* font-size: 4.6vw; */
+        font-size: 3vw;
         margin: 0;
         color: var(--color07);
         @media (max-width: 720px) {
@@ -47,15 +48,18 @@ export const ContainerPorQue = styled.section`
         display: flex;
         flex-direction: column;
         p {
-            line-height: 3.3vw;
+            /* line-height: 3.3vw; */
+            line-height: 1.4;
             margin: 2.5vw 0 0;
-            font-size: 2.3vw;
+            /* font-size: 2.3vw; */
+            font-size: 1.8vw;
             @media (max-width: 720px) {
                 line-height: 5vw;
                 font-size: 4.2vw;
             }
             b {
-                font-size: 2.3vw;
+                /* font-size: 2.3vw; */
+                font-size: 1.9vw;
                 @media (max-width: 720px) {
                     font-size: 4.2vw;
                 }

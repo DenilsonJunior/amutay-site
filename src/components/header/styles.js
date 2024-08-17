@@ -85,7 +85,7 @@ export const HeaderContainer = styled.header`
                 font-size: 2.1vw;
                 color: ${props => (props.$scrolled ? '#1782A5' : 'white')};
                 font-weight: ${props => (props.$scrolled ? '700' : '400')};
-                filter: ${props => (props.$scrolled ? 'drop-shadow(0px 1px 2px #fff)' : 'none')};
+                filter: ${props => (props.$scrolled ? 'drop-shadow(0px 1px 1px #fff5)' : 'none')};
 
                 @media (max-width: 720px) {
                     font-size: 4.5vw;

@@ -6,7 +6,8 @@ export const ContainerCapa = styled.section`
     aspect-ratio: 1.6 / 1;
     background-image: url(./assets/img/bg1.png);
     background-size: cover;
-    /* background-position: bottom; */
+    background-position: center bottom;
+    max-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 10%;
@@ -57,8 +58,9 @@ export const ContainerCapa = styled.section`
         }
 
         .title {
-            font-size: 4.61vw;
-            width: 60vw;
+            /* font-size: 4.61vw; */
+            font-size: 3.8vw;
+            width: 50vw;
             height: 100%;
 
             @media (max-width: 720px) {
@@ -68,7 +70,8 @@ export const ContainerCapa = styled.section`
         }
 
         .subtitle {
-            font-size: 2.44vw;
+            /* font-size: 2.44vw; */
+            font-size: 2.8vw;
             width: 53vw;
             height: 100%;
             display: flex;
