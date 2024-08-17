@@ -42,10 +42,11 @@ export const HeaderContainer = styled.header`
         z-index: 1;
         width: 100vw;
         height: 100vh;
-        background-color: var(--bg-Menu);
+        background-color: rgba(255, 255, 255, .5);
         top: 0;
         left: 0;
         backdrop-filter: blur(1rem);
+        
         a {
             text-decoration: none;
             color: var(--text-color);

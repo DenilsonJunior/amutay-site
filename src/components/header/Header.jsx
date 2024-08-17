@@ -33,7 +33,9 @@ const Header = () => {
     return (
         <HeaderContainer>
             {/* <ModoEscuroButton modoEscuro={modoEscuro} setModoEscuro={setModoEscuro} /> */}
-            <img className='logo' src="./assets/img/logo.png" alt="" />
+            <a href="#capa" target="_blank" rel="noopener noreferrer">
+                <img className='logo' src="./assets/img/logo.png" alt="" />
+            </a>
             
             <button 
                 onClick={() => setIsTrue(!isTrue)}
