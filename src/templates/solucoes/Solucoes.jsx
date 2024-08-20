@@ -1,5 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ContainerSolucoes } from './styles.js';
+import React, { useRef, useLayoutEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -8,10 +11,40 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function Solucoes() {
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+    
+        const animations = [
+            { className: ".anima1", start: "0% 30%", end: "50% 50%", duration: 1 },
+            { className: ".anima2", start: "0% 10%", end: "45% 45%", duration: 1 },
+        ];
+    
+        animations.forEach(({ className, start, end, duration }) => {
+            gsap.to(className, {
+                x: 0,
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration,
+                scrollTrigger: {
+                    trigger: "#solucoes",
+                    scrub: true,
+                    start,
+                    end,
+                    // markers: true, // Deixe isso true apenas para depuração
+                }
+            });
+        });
+    
+        return () => {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+            gsap.killTweensOf(animations.map(({ className }) => className).join(", "));
+        };
+    }, []);
 
     return (
         <ContainerSolucoes className='max-conteudo' id="solucoes">
-            <h2>Soluções</h2>
+            <h2 className=''>Soluções</h2>
             <Swiper
                 spaceBetween={50}
                 centeredSlides={true}

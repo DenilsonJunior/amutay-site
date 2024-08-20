@@ -14,6 +14,33 @@ export const ContainerContatos = styled.section`
         padding-top: 10vw;
     }
 
+    .anima1 {
+        transform: translateX(-30rem);
+        opacity: 0;
+    }
+    .anima2 {
+        transform: translateX(-30rem) translateY(25rem);
+        opacity: 0;
+    }
+    .anima3 {
+        transform: translateX(30rem) translateY(25rem);
+        opacity: 0;
+    }
+    .anima4 {
+        transform: translateX(30rem);
+        opacity: 0;
+    }
+    .anima5 {
+        transform: translateY(30rem);
+        opacity: 0;
+    }
+    @media (max-width: 720px) {
+        .anima1, .anima2, .anima3, .anima4, .anima5 {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
     .redes {
         display: flex;
         gap: 1.5rem;

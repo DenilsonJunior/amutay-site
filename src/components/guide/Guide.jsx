@@ -36,7 +36,7 @@ function Guide() {
             // Mata todos os ScrollTriggers
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
             // Mata todas as animações gsap
-            gsap.killTweensOf("card1, .card2, .card3");
+            gsap.killTweensOf(".card1, .card2, .card3");
         }
     }, []);
 

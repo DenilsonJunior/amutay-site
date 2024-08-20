@@ -1,13 +1,47 @@
+import React, { useRef, useLayoutEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ContainerPorQue } from './styles.js';
 
 function PorQue() {
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+    
+        const animations = [
+            // { className: ".anima1", start: "0% 20%", end: "30% 50%", duration: 1 },
+            { className: ".anima2", start: "5% 30%", end: "35% 50%", duration: 1 },
+            // { className: ".anima3", start: "50% 30%", end: "80% 50%", duration: 2 },
+        ];
+    
+        animations.forEach(({ className, start, end, duration }) => {
+            gsap.to(className, {
+                x: 0,
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration,
+                scrollTrigger: {
+                    trigger: "#porque",
+                    scrub: true,
+                    start,
+                    end,
+                    // markers: true, // Deixe isso true apenas para depuração
+                }
+            });
+        });
+    
+        return () => {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+            gsap.killTweensOf(animations.map(({ className }) => className).join(", "));
+        };
+    }, []);
 
     return (
         <ContainerPorQue className='max-conteudo' id="porque">
             <img className='fumaca' src="./assets/img/fmc2.png" alt="" />
 
-            <h2>Porque Amutay?</h2>
-            <video src="" controls poster='./assets/img/video.png'></video>
+            <h2 className=''>Porque Amutay?</h2>
+            <video className='anima2' src="" controls poster='./assets/img/video.png'></video>
             <div className="boxText1">
                 <p><b>Amutay representa nosso compromisso de construir e compartilhar conhecimento</b></p>
                 <p>Desenvolvemos um <b>trabalho personalizado</b>, pois sabemos que realidades distintas demandam <b>soluções específicas</b>.</p>

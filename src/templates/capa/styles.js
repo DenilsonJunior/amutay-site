@@ -33,6 +33,15 @@ export const ContainerCapa = styled.section`
         padding-bottom: 3.6%;
         /* padding-bottom: 4rem; */
         /* background-color: #0005; */
+        /* animation: capaslide 1s linear; */
+        @keyframes capaslide {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateY(0%);
+            }
+        }
         @media (max-width: 720px) {
             padding-bottom: 10%;
         }

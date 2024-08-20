@@ -6,6 +6,21 @@ export const ContainerPorQue = styled.section`
     padding-bottom: 10vw;
     position: relative;
 
+    .anima1, .anima3 {
+        transform: translateY(30rem);
+        opacity: 0;
+    }
+    .anima2 {
+        transform: scale(.1);
+        opacity: 0;
+    }
+    @media (max-width: 720px) {
+        .anima1, .anima2, .anima3 {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
     .fumaca {
         position: absolute;
         width: 155vw;

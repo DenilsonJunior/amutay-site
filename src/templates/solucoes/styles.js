@@ -5,6 +5,17 @@ export const ContainerSolucoes = styled.section`
     padding-top: 8.2vw;
     padding-bottom: 8.2vw;
 
+    .anima1, .anima2 {
+        transform: translateY(30rem);
+        opacity: 0;
+    }
+    @media (max-width: 720px) {
+        .anima1, .anima2 {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
     h2 {
         /* font-size: 4.6vw; */
         font-size: 3vw;

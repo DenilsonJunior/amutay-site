@@ -8,6 +8,15 @@ export const HeaderContainer = styled.header`
     padding: 3.5vw 3vw;
     z-index: 2;
     transition: background-color 0.3s ease-in-out;
+    /* animation: header 1s linear; */
+    @keyframes header {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
 
     /* Aplica cor de fundo ao Header quando o estado "$scrolled" for verdadeiro */
     /* background-color: ${props => (props.$scrolled ? 'rgba(0, 0, 0, 0.8)' : 'transparent')}; */
@@ -24,7 +33,10 @@ export const HeaderContainer = styled.header`
     button {
         border: none;
         background-color: transparent;
-        color: ${props => (props.$scrolled ? '#1782A5' : 'white')};
+        color: ${props => {
+            if (props.$isTrue) return '#1782A5';
+            return props.$scrolled ? '#1782A5' : 'white';
+        }};
         width: 5vw;
         height: 5vw;
         display: none;  /* Oculta o botão em telas maiores */
@@ -66,7 +78,7 @@ export const HeaderContainer = styled.header`
             background-color: rgba(255, 255, 255, 0.9);
             top: 0;
             left: 0;
-            backdrop-filter: blur(1rem);
+            backdrop-filter: blur(5px);
             display: ${props => (props.$isTrue ? 'flex' : 'none')}; /* Exibe o menu apenas quando o estado "$isTrue" é verdadeiro */
         }
 
@@ -75,7 +87,7 @@ export const HeaderContainer = styled.header`
             color: var(--text-color);
             transition-duration: .2s;
             font-weight: 700;
-            backdrop-filter: ${props => (props.$scrolled ? 'blur(1px)' : 'none')};
+            /* backdrop-filter: ${props => (props.$scrolled ? 'blur(1px)' : 'none')}; */
             padding: 0vw .1vw;
 
             &:hover {

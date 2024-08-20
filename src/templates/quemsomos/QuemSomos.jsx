@@ -1,6 +1,8 @@
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useRef, useLayoutEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ContainerQuemSomos } from './styles.js';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -10,8 +12,42 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function QuemSomos() {
 
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+    
+        const animations = [
+            // { className: ".anima1", start: "-20% 20%", end: "15% 80%", duration: 2 },
+            // { className: ".anima2", start: "-5% 20%", end: "20% 50%", duration: 2 },
+            { className: ".anima3", start: "0% 30%", end: "35% 60%", duration: 5 },
+            // { className: ".anima4", start: "30% 20%", end: "60% 60%", duration: 1 },
+            { className: ".card1, .card2", start: "30% 40%", end: "85% 70%", duration: 5 },
+        ];
+    
+        animations.forEach(({ className, start, end, duration }) => {
+            gsap.to(className, {
+                x: 0,
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration,
+                scrollTrigger: {
+                    trigger: "#quem",
+                    scrub: true,
+                    start,
+                    end,
+                    // markers: true, // Deixe isso true apenas para depuração
+                }
+            });
+        });
+    
+        return () => {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+            gsap.killTweensOf(animations.map(({ className }) => className).join(", "));
+        };
+    }, []);
+
     return (
-        <ContainerQuemSomos className='max-conteudo' id="quem">
+        <ContainerQuemSomos className='max-conteudo secAnima' id="quem">
 
             <img className='fumaca' src="./assets/img/fmc1.png" alt="" />
             
@@ -38,7 +74,7 @@ function QuemSomos() {
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
+                className="mySwiper anima3"
             >
                 <SwiperSlide>
                     <div className='cardSlide'>
@@ -67,7 +103,7 @@ function QuemSomos() {
             </div>
 
             <div className='flexCards'>
-                <div className='card'>
+                <div className='card card1'>
                     <img className='pers' src="./assets/img/mari.png" alt="" />
                     <div className="boxtext">
                         <h3>Marianne Marimon</h3>
@@ -80,7 +116,7 @@ function QuemSomos() {
                         <p>Acessar</p>
                     </button>
                 </div>
-                <div className='card'>
+                <div className='card card2'>
                     <img className='pers' src="./assets/img/leila.png" alt="" />
                     <div className="boxtext">
                         <h3>Leila Paiter</h3>

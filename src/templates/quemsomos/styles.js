@@ -15,6 +15,30 @@ export const ContainerQuemSomos = styled.section`
         }
     }
 
+    .anima1, .anima2, .anima4 {
+        transform: translateY(30rem);
+        opacity: 0;
+    }
+    .anima3 {
+        transform: scale(.1);
+        opacity: 0;
+    }
+    .card1 {
+        transform: translateX(-70%) translateY(20rem);
+        opacity: 0;
+    }
+    .card2 {
+        transform: translateX(70%) translateY(20rem);
+        opacity: 0;
+    }
+    
+    @media (max-width: 720px) {
+        .anima1, .anima2, .anima3, .anima4, .card1, .card2 {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
     .boxtxt1 {
         position: relative;
         z-index: 1;
