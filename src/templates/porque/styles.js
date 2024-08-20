@@ -40,7 +40,7 @@ export const ContainerPorQue = styled.section`
     }
     @keyframes fumaca1 {
         0% {
-            left: -80vw;
+            left: -35vw;
         }
         100% {
             left: 0vw;
@@ -51,7 +51,7 @@ export const ContainerPorQue = styled.section`
             left: 0vw;
         }
         100% {
-            left: -80vw;
+            left: -35vw;
         }
     }
 
