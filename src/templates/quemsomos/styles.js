@@ -17,11 +17,17 @@ export const ContainerQuemSomos = styled.section`
 
     .fumaca1 {
         top: 25vw;
-        animation: fumaca2 120s infinite;
+        animation: fumaca2 40s infinite;
+        @media (max-width: 720px) {
+            top: 55vw;
+        }
     }
     .fumaca2 {
         top: 35vw;
-        animation: fumaca1 120s infinite;
+        animation: fumaca1 40s infinite;
+        @media (max-width: 720px) {
+            top: 80vw;
+        }
     }
     @keyframes fumaca1 {
         0% {
