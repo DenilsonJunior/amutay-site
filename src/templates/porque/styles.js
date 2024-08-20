@@ -30,6 +30,30 @@ export const ContainerPorQue = styled.section`
             width: 170vw;
         }
     }
+    .fumaca1 {
+        top: 3vw;
+        animation: fumaca2 120s infinite;
+    }
+    .fumaca2 {
+        top: 5vw;
+        animation: fumaca1 120s infinite;
+    }
+    @keyframes fumaca1 {
+        0% {
+            left: -80vw;
+        }
+        100% {
+            left: 0vw;
+        }
+    }
+    @keyframes fumaca2 {
+        0% {
+            left: 0vw;
+        }
+        100% {
+            left: -80vw;
+        }
+    }
 
     h2 {
         position: relative;

@@ -49,7 +49,8 @@ function QuemSomos() {
     return (
         <ContainerQuemSomos className='max-conteudo secAnima' id="quem">
 
-            <img className='fumaca' src="./assets/img/fmc1.png" alt="" />
+            <img className='fumaca fumaca1' src="./assets/img/fmc1.png" alt="" />
+            <img className='fumaca fumaca2' src="./assets/img/fmc1.png" alt="" />
             
             <div className='boxtxt1'>
                 <h2>Quem Somos?</h2>

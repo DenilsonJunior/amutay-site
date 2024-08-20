@@ -15,6 +15,31 @@ export const ContainerQuemSomos = styled.section`
         }
     }
 
+    .fumaca1 {
+        top: 25vw;
+        animation: fumaca2 120s infinite;
+    }
+    .fumaca2 {
+        top: 35vw;
+        animation: fumaca1 120s infinite;
+    }
+    @keyframes fumaca1 {
+        0% {
+            left: -80vw;
+        }
+        100% {
+            left: 0vw;
+        }
+    }
+    @keyframes fumaca2 {
+        0% {
+            left: 0vw;
+        }
+        100% {
+            left: -80vw;
+        }
+    }
+
     .anima1, .anima2, .anima4 {
         transform: translateY(30rem);
         opacity: 0;
