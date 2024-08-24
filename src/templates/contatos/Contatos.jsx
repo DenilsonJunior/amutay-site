@@ -41,9 +41,9 @@ function Contatos() {
     return (
         <ContainerContatos className='max-conteudo' id="contatos">
             <div className='redes'>
-                <a href="http://" target="_blank" rel="noopener noreferrer" className='anima1'>
+                {/* <a href="http://" target="_blank" rel="noopener noreferrer" className='anima1'>
                     <img src="./assets/img/ico-mail.png" alt="" />
-                </a>
+                </a> */}
                 <a href="https://www.linkedin.com/company/amutay-educa%C3%A7%C3%A3o/" target="_blank" rel="noopener noreferrer" className='anima2'>
                     <img src="./assets/img/ico-linkdin.png" alt="" />
                 </a>
