@@ -110,12 +110,12 @@ function QuemSomos() {
                         <h3>Marianne Marimon</h3>
                         <p>Consultora de aprendizagem e especialista no desenvolvimento de estratégias e soluções educativas nos mais diferentes contextos, da educação pública ao corporativo. Possui 10 anos de experiência com docência, projetos educacionais e comunitários, além de formação continuada de professores. É mestra em Educação Científica e Tecnológica, especialista em Trabalho Interdisciplinar e licenciada em Educação do Campo na área de Ciências da Natureza e Matemática.</p>
                     </div>
-                    <button>
+                    <a href="https://www.linkedin.com/in/leila-paiter/" target="_blank" rel="noopener noreferrer">
                         <div className="box">
                             <img className='icoLink' src="./assets/img/linkdin.png" alt="" />
                         </div>
                         <p>Acessar</p>
-                    </button>
+                    </a>
                 </div>
                 <div className='card card2'>
                     <img className='pers' src="./assets/img/leila.png" alt="" />
@@ -123,12 +123,12 @@ function QuemSomos() {
                         <h3>Leila Paiter</h3>
                         <p>Licenciada em Educação do Campo na área de Ciências da Natureza e Matemática, pedagoga, especialista em Trabalho Interdisciplinar e mestra em Educação Científica e Tecnológica. Possui experiência com docência na Educação Básica, em projetos educacionais escolares e comunitários e na formação inicial e continuada de professores. Nos últimos anos, tem se dedicado a atuar em projetos de educação digital.</p>
                     </div>
-                    <button>
+                    <a href="https://www.linkedin.com/in/mariannemarimon/" target="_blank" rel="noopener noreferrer">
                         <div className="box">
                             <img className='icoLink' src="./assets/img/linkdin.png" alt="" />
                         </div>
                         <p>Acessar</p>
-                    </button>
+                    </a>
                 </div>
             </div>
 

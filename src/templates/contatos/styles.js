@@ -14,7 +14,7 @@ export const ContainerContatos = styled.section`
         padding-top: 10vw;
     }
 
-    .anima1 {
+    /* .anima1 {
         transform: translateX(-30rem);
         opacity: 0;
     }
@@ -29,10 +29,12 @@ export const ContainerContatos = styled.section`
     .anima4 {
         transform: translateX(30rem);
         opacity: 0;
-    }
+    } */
     .anima5 {
-        transform: translateY(30rem);
+        /* transform: translateY(30rem);
         opacity: 0;
+        width: 100%; */
+        max-width: 650px;
     }
     @media (max-width: 720px) {
         .anima1, .anima2, .anima3, .anima4, .anima5 {

@@ -299,7 +299,7 @@ export const ContainerQuemSomos = styled.section`
                 }
             }
 
-            button {
+            a {
                 background-color: var(--color07);
                 display: flex;
                 align-items: center;
@@ -310,8 +310,14 @@ export const ContainerQuemSomos = styled.section`
                 position: absolute;
                 bottom: 3.5vw;
                 box-shadow: 0rem 0.3rem 1rem 0.5rem #0003;
+                text-decoration: none;
+                transition-duration: .3s;
                 @media (max-width: 720px) {
                     padding: .8rem 2rem .8rem .8rem;
+                }
+
+                &:hover {
+                    transform: scale(1.03);
                 }
                 .box {
                     background-color: white;
