@@ -11,7 +11,7 @@ export const ContainerContatos = styled.section`
     padding-top: 5vw;
     padding-bottom: 5vw;
     @media (max-width: 720px) {
-        padding-top: 10vw;
+        padding: 10vw 0;
     }
 
     /* .anima1 {
@@ -46,6 +46,10 @@ export const ContainerContatos = styled.section`
     .logo2 {
         width: 15vw;
         margin-top: 5vw;
+        @media (max-width: 720px) {
+            width: 40%;
+            margin-top: 15vw;
+        }
     }
 
     .redes {
@@ -53,7 +57,7 @@ export const ContainerContatos = styled.section`
         gap: 1.5rem;
         margin: 5vw 0 1vw;
         @media (max-width: 720px) {
-            margin: 17vw 0 3vw;
+            margin: 8vw 0 3vw;
         }
         
         a {

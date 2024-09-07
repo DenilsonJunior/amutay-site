@@ -56,6 +56,10 @@ export const ContainerPorQue = styled.section`
 
     .blockVideo {
         padding: 0 10.4vw;
+        @media (max-width: 720px) {
+            padding: 0 2rem;
+        }
+        
         h2 {
             position: relative;
             z-index: 1;
@@ -92,6 +96,10 @@ export const ContainerPorQue = styled.section`
         background-image: url(./assets/img/mato2.jpg);
         background-size: cover;
         background-position: bottom;
+        @media (max-width: 720px) {
+            padding: 30vw 2rem 8vw;
+        }
+
         .boxText1 {
             position: relative;
             z-index: 1;
@@ -102,6 +110,10 @@ export const ContainerPorQue = styled.section`
             padding: 3vw 4vw;
             border-radius: 2.5vw;
             box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
+            @media (max-width: 720px) {
+                padding: 6vw;
+            }
+
             p {
                 /* line-height: 3.3vw; */
                 line-height: 1.4;

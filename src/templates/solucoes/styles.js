@@ -94,6 +94,10 @@ export const ContainerSolucoes = styled.section`
         padding: 3vw 4vw;
         border-radius: 2.5vw;
         box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
+        @media (max-width: 720px) {
+            margin-top: 8vw;
+            padding: 6vw;
+        }
         p {
             /* line-height: 3.3vw; */
             line-height: 1.4;

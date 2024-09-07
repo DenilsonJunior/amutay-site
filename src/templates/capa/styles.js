@@ -7,12 +7,12 @@ export const ContainerCapa = styled.section`
     background-image: url(./assets/img/bg1.png);
     background-size: cover;
     background-position: center bottom;
-    max-height: 100vh;
+    max-height: 115vh;
     display: flex;
     align-items: center;
-    /* padding-top: 10%; */
+    padding-top: 8vw;
     @media (max-width: 720px) {
-        aspect-ratio: 1.5 / 3;
+        aspect-ratio: 1.5 / 2.6;
     }
 
     img.logo {
@@ -31,6 +31,7 @@ export const ContainerCapa = styled.section`
         display: flex;
         gap: 5vw;
         align-items: center;
+        margin-top: -10vw;
         @media (max-width: 720px) {
             flex-wrap: wrap;
             justify-content: center;
@@ -40,6 +41,7 @@ export const ContainerCapa = styled.section`
             width: 20vw;
             @media (max-width: 720px) {
                 width: 60%;
+                margin-top: 10vw;
             }
         }
         .swiper {

@@ -80,7 +80,7 @@ export const ContainerQuemSomos = styled.section`
             color: var(--color07);
             @media (max-width: 720px) {
                 font-size: 6vw;
-                margin: 10% 0 5%;
+                margin: 0% 0 5%;
             }
         }
     }

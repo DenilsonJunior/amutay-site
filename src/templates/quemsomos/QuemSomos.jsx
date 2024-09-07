@@ -16,10 +16,10 @@ function QuemSomos() {
         gsap.registerPlugin(ScrollTrigger);
     
         const animations = [
-            // { className: ".anima1", start: "-20% 20%", end: "15% 80%", duration: 2 },
-            // { className: ".anima2", start: "-5% 20%", end: "20% 50%", duration: 2 },
+            { className: ".anima1", start: "-20% 20%", end: "15% 80%", duration: 2 },
+            { className: ".anima2", start: "-5% 20%", end: "20% 50%", duration: 2 },
             { className: ".anima3", start: "0% 30%", end: "35% 60%", duration: 5 },
-            // { className: ".anima4", start: "30% 20%", end: "60% 60%", duration: 1 },
+            { className: ".anima4", start: "30% 20%", end: "60% 60%", duration: 1 },
             { className: ".card1, .card2", start: "30% 40%", end: "85% 70%", duration: 5 },
         ];
     
@@ -52,13 +52,13 @@ function QuemSomos() {
             <img className='fumaca fumaca1' src="./assets/img/fmc1.png" alt="" />
             <img className='fumaca fumaca2' src="./assets/img/fmc1.png" alt="" />
             
-            <div className='boxtxt1'>
+            <div className='boxtxt1 anima1'>
                 <h2>Quem Somos?</h2>
                 <p><b>Somos uma Consultoria Educacional que desenvolve experiências personalizadas e de alto impacto.</b></p>
                 <p>Oferecemos consultoria, gestão e elaboração de <b>soluções educacionais</b> voltadas para o desenvolvimento de trilhas de aprendizagem com <b>formação</b> <b>virtual</b>, <b>híbrida</b> e <b>presencial</b>.</p>
             </div>
 
-            <div className='boxtxt2'>
+            <div className='boxtxt2 anima1'>
                 <p>A paixão e o comprometimento que colocamos em cada projeto desenvolvido são resultado de um conjunto variado de vivências. Os caminhos pessoais e profissionais de quem compõe a nossa empresa constroem pontes que unem conhecimentos, competências e qualidades.</p>
                 <p>Confira algumas das qualificações que os profissionais que atuam na Amutay compartilham, para garantir a qualidade e o nível de conhecimento especializado em cada entrega:​</p>
             </div>
@@ -98,7 +98,7 @@ function QuemSomos() {
                 </SwiperSlide>
             </Swiper>
 
-            <div className='boxtxt3'>
+            <div className='boxtxt3 anima4'>
                 <h2>Uma empresa feita por mulheres!</h2>
                 <p>A <b>Amutay</b> foi idealizada por mulheres que, desde a sua fundação, trabalham a <b>perspectiva feminina</b> na concepção, no encaminhamento e no desenvolvimento de <b>cada um dos projetos</b> de forma criativa.</p>
                 <p>Prezamos a diversidade e a inclusão, conscientes de que somos uma empresa feita por pessoas reais e únicas, que trabalham para contribuir com a formação e para mudar a vida de outras pessoas.</p>

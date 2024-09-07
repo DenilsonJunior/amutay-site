@@ -56,8 +56,9 @@ function Contatos() {
                 </a>
             </div>
             <div className='anima5'>
-                <p>Estrada Vereador Onildo Lemos, nº 331, unidade 308 – Bloco C, Ingleses do Rio Vermelho 88058-700 Florianópolis, SC</p>
+                {/* <p>Estrada Vereador Onildo Lemos, nº 331, unidade 308 – Bloco C, Ingleses do Rio Vermelho 88058-700 Florianópolis, SC</p> */}
                 {/* <p>Telefone: (21) 99999-9999 | amutay@amutay.com.br</p> */}
+                <p>Florianópolis – SC</p>
             </div>
         </ContainerContatos>
     );
