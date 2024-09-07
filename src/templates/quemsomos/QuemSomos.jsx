@@ -109,7 +109,7 @@ function QuemSomos() {
                     <img className='pers' src="./assets/img/mari.png" alt="" />
                     <div className="boxtext">
                         <h3>Marianne Marimon</h3>
-                        <p>Consultora de aprendizagem e especialista no desenvolvimento de estratégias e soluções educativas nos mais diferentes contextos, da educação pública ao corporativo. Possui 10 anos de experiência com docência, projetos educacionais e comunitários, além de formação continuada de professores. É mestra em Educação Científica e Tecnológica, especialista em Trabalho Interdisciplinar e licenciada em Educação do Campo na área de Ciências da Natureza e Matemática.</p>
+                        <p>Consultora de aprendizagem, gestora de projetos e professora é especialista no desenvolvimento de soluções educativas digitais, hibridas ou presenciais nos mais diferentes contextos. Possui mestrado em Educação científica e tecnológica e especialização em trabalho interdisciplinar.</p>
                     </div>
                     <a href="https://www.linkedin.com/in/leila-paiter/" target="_blank" rel="noopener noreferrer">
                         <div className="box">
@@ -122,7 +122,7 @@ function QuemSomos() {
                     <img className='pers' src="./assets/img/leila.png" alt="" />
                     <div className="boxtext">
                         <h3>Leila Paiter</h3>
-                        <p>Licenciada em Educação do Campo na área de Ciências da Natureza e Matemática, pedagoga, especialista em Trabalho Interdisciplinar e mestra em Educação Científica e Tecnológica. Possui experiência com docência na Educação Básica, em projetos educacionais escolares e comunitários e na formação inicial e continuada de professores. Nos últimos anos, tem se dedicado a atuar em projetos de educação digital.</p>
+                        <p>Gestora de projetos e operações, especialista em ensino e aprendizagem e professora. Atua no desenvolvimento de soluções educativas digitais, hibridas ou presenciais nos mais diferentes contextos. Possui mestrado em Educação científica e tecnológica e especialização em trabalho interdisciplinar.</p>
                     </div>
                     <a href="https://www.linkedin.com/in/mariannemarimon/" target="_blank" rel="noopener noreferrer">
                         <div className="box">

@@ -9,7 +9,7 @@ export const ContainerContatos = styled.section`
     background-position: center top;
     background-repeat: no-repeat;
     padding-top: 5vw;
-    padding-bottom: 15vw;
+    padding-bottom: 5vw;
     @media (max-width: 720px) {
         padding-top: 10vw;
     }
@@ -43,10 +43,15 @@ export const ContainerContatos = styled.section`
         }
     }
 
+    .logo2 {
+        width: 15vw;
+        margin-top: 5vw;
+    }
+
     .redes {
         display: flex;
         gap: 1.5rem;
-        margin: 15vw 0 1vw;
+        margin: 5vw 0 1vw;
         @media (max-width: 720px) {
             margin: 17vw 0 3vw;
         }

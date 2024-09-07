@@ -26,6 +26,10 @@ export const ContainerSolucoes = styled.section`
         }
     }
 
+    p {
+        margin-top: 2vw;
+    }
+
     .swiper {
         margin-top: 6vw;
         padding-bottom: 3.5vw;
@@ -77,6 +81,39 @@ export const ContainerSolucoes = styled.section`
                     font-size: 4.4vw;
                 }
             }
+        }
+    }
+
+    .boxText1 {
+        position: relative;
+        z-index: 1;
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 3vw 4vw;
+        border-radius: 2.5vw;
+        box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
+        p {
+            /* line-height: 3.3vw; */
+            line-height: 1.4;
+            margin: 0;
+            /* font-size: 2.3vw; */
+            font-size: 1.8vw;
+            @media (max-width: 720px) {
+                line-height: 5vw;
+                font-size: 4.2vw;
+            }
+            b {
+                /* font-size: 2.3vw; */
+                font-size: 1.9vw;
+                @media (max-width: 720px) {
+                    font-size: 4.2vw;
+                }
+            }
+        }
+        p + p {
+            margin-top: 2vw;
         }
     }
    
