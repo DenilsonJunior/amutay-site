@@ -15,8 +15,9 @@ function Solucoes() {
         gsap.registerPlugin(ScrollTrigger);
     
         const animations = [
-            { className: ".anima1", start: "0% 30%", end: "50% 50%", duration: 1 },
-            { className: ".anima2", start: "0% 10%", end: "45% 45%", duration: 1 },
+            { className: ".anima0", start: "-20% 30%", end: "20% 50%", duration: 1 },
+            { className: ".anima1", start: "0% 30%", end: "30% 50%", duration: 1 },
+            { className: ".anima2", start: "40% 10%", end: "70% 40%", duration: 1 },
         ];
     
         animations.forEach(({ className, start, end, duration }) => {
@@ -44,8 +45,10 @@ function Solucoes() {
 
     return (
         <ContainerSolucoes className='max-conteudo' id="solucoes">
-            <h2 className=''>Nossa Entrega</h2>
-            <p>Contamos com diversos tipos de entregáveis para criar uma jornada formativa diferenciada, combinando linguagens e formatos de navegação distintos para maximizar o engajamento e a aprendizagem.</p>
+            <div className="boxText0 anima0">
+                <h2 className=''>Nossa Entrega</h2>
+                <p>Contamos com diversos tipos de entregáveis para criar uma jornada formativa diferenciada, combinando linguagens e formatos de navegação distintos para maximizar o engajamento e a aprendizagem.</p>
+            </div>
             <Swiper
                 spaceBetween={50}
                 centeredSlides={true}
@@ -59,7 +62,7 @@ function Solucoes() {
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
+                className="mySwiper anima1"
             >
                 <SwiperSlide>
                     <div className="boxFundo">
@@ -128,7 +131,7 @@ function Solucoes() {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            <div className="boxText1">
+            <div className="boxText1 anima2">
                 <p>Nosso escopo de trabalho contempla o mergulho, diagnóstico e gestão de todas as etapas de construção do percurso de formação. Ficamos responsáveis pelo desenho da estratégia e desenvolvimento da solução de aprendizagem, assim como todas as etapas operacionais, como o design de aprendizagem, revisão ortográfica, validações, design gráfico,  diagramação, programação e acessibilidade, até que tudo estar pronto para a publicação na plataforma LMS.</p>
                 <p>Entre em contato para conhecer mais sobre o nosso trabalho!  ​</p>
             </div>         

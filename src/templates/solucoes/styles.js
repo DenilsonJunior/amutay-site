@@ -5,7 +5,7 @@ export const ContainerSolucoes = styled.section`
     padding-top: 8.2vw;
     padding-bottom: 8.2vw;
 
-    .anima1, .anima2 {
+    .anima0, .anima1, .anima2 {
         transform: translateY(30rem);
         opacity: 0;
     }

@@ -10,7 +10,7 @@ function PorQue() {
         const animations = [
             // { className: ".anima1", start: "0% 20%", end: "30% 50%", duration: 1 },
             { className: ".anima2", start: "0% 40%", end: "35% 50%", duration: 1 },
-            // { className: ".anima3", start: "50% 30%", end: "80% 50%", duration: 2 },
+            { className: ".anima3", start: "-30% 20%", end: "40% 40%", duration: 2 },
         ];
     
         animations.forEach(({ className, start, end, duration }) => {
@@ -47,7 +47,7 @@ function PorQue() {
             </div>
 
             <div className="newBG">
-                <div className="boxText1">
+                <div className="boxText1 anima3">
                     <p><b>Amutay representa nosso compromisso de construir e compartilhar conhecimento</b></p>
                     <p>Desenvolvemos um <b>trabalho personalizado</b>, pois sabemos que realidades distintas demandam <b>soluções específicas</b>.</p>
                     <p>Nossa <b>estratégia metodológica</b> permite perceber e <b>compreender diferentes contextos</b>, tornando as experiências educativas mais significativas e potentes.</p>
