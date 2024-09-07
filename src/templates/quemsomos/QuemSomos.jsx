@@ -35,6 +35,7 @@ function QuemSomos() {
                     scrub: true,
                     start,
                     end,
+                    once: true,
                     // markers: true, // Deixe isso true apenas para depuração
                 }
             });

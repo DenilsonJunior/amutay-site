@@ -59,7 +59,7 @@ p {
     color: var(--color01);
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     line-height: 1.4;
     @media (max-width: 720px) {
         line-height: 5vw;
@@ -67,7 +67,7 @@ p {
     }
     b {
         font-family: 'Montserrat';
-        font-size: 1.6vw;
+        font-size: 1.5vw;
         font-weight: 700;
         @media (max-width: 720px) {
             font-size: 4.2vw;

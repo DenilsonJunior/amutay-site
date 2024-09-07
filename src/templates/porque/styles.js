@@ -114,24 +114,6 @@ export const ContainerPorQue = styled.section`
                 padding: 6vw;
             }
 
-            p {
-                /* line-height: 3.3vw; */
-                line-height: 1.4;
-                margin: 0;
-                /* font-size: 2.3vw; */
-                font-size: 1.8vw;
-                @media (max-width: 720px) {
-                    line-height: 5vw;
-                    font-size: 4.2vw;
-                }
-                b {
-                    /* font-size: 2.3vw; */
-                    font-size: 1.9vw;
-                    @media (max-width: 720px) {
-                        font-size: 4.2vw;
-                    }
-                }
-            }
             p + p {
                 margin-top: 2vw;
             }
