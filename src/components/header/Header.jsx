@@ -4,49 +4,38 @@ import { HeaderContainer } from './styles.js';
 const Header = () => {
     const [isTrue, setIsTrue] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [activeSection, setActiveSection] = useState('');
 
+    // Função para monitorar o scroll e sublinhar o item ativo
     useEffect(() => {
-        const handleScroll = () => {
-            const capa = document.getElementById('capa');
-            const capaHeight = capa?.offsetHeight || 0;
-
-            if (window.scrollY > capaHeight) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
+        const sections = document.querySelectorAll('section'); // Supondo que as seções tenham a tag <section>
+        const options = {
+            threshold: 0.1, // A seção é considerada visível quando 50% está no viewport
         };
 
-        window.addEventListener('scroll', handleScroll);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    setActiveSection(id); // Atualiza a seção ativa
+                }
+            });
+        }, options);
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            sections.forEach((section) => {
+                observer.unobserve(section);
+            });
         };
     }, []);
 
-    useEffect(() => {
-        let clickLinks = document.getElementsByClassName('boxMenu')[0]?.getElementsByTagName('a');
-
-        const handleClick = () => setIsTrue(prevIsTrue => !prevIsTrue);
-
-        if (clickLinks) {
-            for (let i = 0; i < clickLinks.length; i++) {
-                clickLinks[i].addEventListener('click', handleClick);
-            }
-        }
-
-        return () => {
-            if (clickLinks) {
-                for (let i = 0; i < clickLinks.length; i++) {
-                    clickLinks[i].removeEventListener('click', handleClick);
-                }
-            }
-        };
-    }, [isTrue]);
-
     return (
         <HeaderContainer $isTrue={isTrue} $scrolled={scrolled}>
-            {/* <img className='logo' src="./assets/img/logo.png" alt="Logo" /> */}
+            <img className='logo' src="./assets/img/logo2.png" alt="Logo" />
             
             <button 
                 onClick={() => setIsTrue(!isTrue)}
@@ -57,19 +46,19 @@ const Header = () => {
             </button>
             
             <div className='boxMenu'>
-                <a href="#capa">
+                <a href="#capa" className={activeSection === 'capa' ? 'active' : ''}>
                     <p>Home</p>
                 </a>
-                <a href="#quem">
+                <a href="#quem" className={activeSection === 'quem' ? 'active' : ''}>
                     <p>Quem somos</p>
                 </a>
-                <a href="#porque">
+                <a href="#porque" className={activeSection === 'porque' ? 'active' : ''}>
                     <p>Porque</p>
                 </a>
-                <a href="#solucoes">
+                <a href="#solucoes" className={activeSection === 'solucoes' ? 'active' : ''}>
                     <p>Soluções</p>
                 </a>
-                <a href="#contatos">
+                <a href="#contatos" className={activeSection === 'contatos' ? 'active' : ''}>
                     <p>Contatos</p>
                 </a>
             </div>

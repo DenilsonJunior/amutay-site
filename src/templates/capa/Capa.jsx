@@ -12,14 +12,15 @@ function Capa() {
 
     return (
         <ContainerCapa id='capa'>
-            <img className='logo' src="./assets/img/logo.png" alt="Logo" />
-            <div className='max-conteudo'>
+            {/* <img className='logo' src="./assets/img/logo2.png" alt="Logo" /> */}
+            <div className='max-conteudo boxSlide'>
+                <img className='logo2' src="./assets/img/logo.png" alt="Logo" />
                 <Swiper
                     spaceBetween={50}
                     centeredSlides={true}
                     slidesPerView={1}
                     autoplay={{
-                        delay: 50000,
+                        delay: 2000,
                         disableOnInteraction: false,
                     }}
                     pagination={{

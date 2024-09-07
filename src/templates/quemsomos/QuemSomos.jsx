@@ -54,12 +54,13 @@ function QuemSomos() {
             
             <div className='boxtxt1'>
                 <h2>Quem Somos?</h2>
-                <p><b>Desenvolvemos experiências personalizadas e de alto impacto.</b></p>
+                <p><b>Somos uma Consultoria Educacional que desenvolve experiências personalizadas e de alto impacto.</b></p>
                 <p>Oferecemos consultoria, gestão e elaboração de <b>soluções educacionais</b> voltadas para o desenvolvimento de trilhas de aprendizagem com <b>formação</b> <b>virtual</b>, <b>híbrida</b> e <b>presencial</b>.</p>
             </div>
 
             <div className='boxtxt2'>
                 <p>A paixão e o comprometimento que colocamos em cada projeto desenvolvido são resultado de um conjunto variado de vivências. Os caminhos pessoais e profissionais de quem compõe a nossa empresa constroem pontes que unem conhecimentos, competências e qualidades.</p>
+                <p>Confira algumas das qualificações que os profissionais que atuam na Amutay compartilham, para garantir a qualidade e o nível de conhecimento especializado em cada entrega:​</p>
             </div>
 
             <Swiper
@@ -98,7 +99,7 @@ function QuemSomos() {
             </Swiper>
 
             <div className='boxtxt3'>
-                <p><b>Uma empresa feita por mulheres!</b></p>
+                <h2>Uma empresa feita por mulheres!</h2>
                 <p>A <b>Amutay</b> foi idealizada por mulheres que, desde a sua fundação, trabalham a <b>perspectiva feminina</b> na concepção, no encaminhamento e no desenvolvimento de <b>cada um dos projetos</b> de forma criativa.</p>
                 <p>Prezamos a diversidade e a inclusão, conscientes de que somos uma empresa feita por pessoas reais e únicas, que trabalham para contribuir com a formação e para mudar a vida de outras pessoas.</p>
             </div>

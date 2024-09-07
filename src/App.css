@@ -6,19 +6,17 @@
     /* font-family: Arial, Helvetica, sans-serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 62.5%;
-    text-wrap: wrap;
+    text-wrap: pretty;
 }
 
 html {
     scroll-behavior: smooth;
-    text-wrap: pretty;
 }
 
 body {
     /* background-image: url(./assets/img/croqui.png); */
     background-image: url(./assets/img/bgtotal.png);
     background-size: contain;
-    text-wrap: wrap;
 }
 
 .max-conteudo {
@@ -44,32 +42,41 @@ button {
 
 h1 {
     font-size: 5rem;
-    font-family: 'Montserrat Alternates';
+    font-family: 'Montserrat';
 }
 
 h2 {
     font-size: 3.5rem;
-    font-family: 'Montserrat Alternates';
+    font-family: 'Montserrat';
 }
 
 h3 {
     font-size: 2.4rem;
-    font-family: 'Montserrat Alternates';
+    font-family: 'Montserrat';
 }
 
 p {
     color: var(--color01);
-    font-family: 'Montserrat Alternates';
+    font-family: 'Montserrat';
     font-weight: 400;
+    font-size: 1.6vw;
+    line-height: 1.4;
+    @media (max-width: 720px) {
+        line-height: 5vw;
+        font-size: 4.2vw;
+    }
     b {
-        font-family: 'Montserrat Alternates';
-        font-size: 1.8rem;
+        font-family: 'Montserrat';
+        font-size: 1.6vw;
         font-weight: 700;
+        @media (max-width: 720px) {
+            font-size: 4.2vw;
+        }
     }
 }
 
 a {
-    font-family: 'Montserrat Alternates';
+    font-family: 'Montserrat';
 }
 
 .swiper-pagination {

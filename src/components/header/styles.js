@@ -4,11 +4,16 @@ export const HeaderContainer = styled.header`
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    padding: 3.5vw 3vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 3vw;
     z-index: 2;
     transition: background-color 0.3s ease-in-out;
+    background-color: #003A43;
     /* animation: header 1s linear; */
+    @media (max-width: 720px) {
+        height: 14vw;
+    }
     @keyframes header {
         0% {
             transform: translateY(-100%);
@@ -22,11 +27,11 @@ export const HeaderContainer = styled.header`
     /* background-color: ${props => (props.$scrolled ? 'rgba(0, 0, 0, 0.8)' : 'transparent')}; */
 
     img.logo {
-        width: 4.5vw;
+        height: 3vw;
         /* filter: drop-shadow(0px 1px 2px #333); */
 
         @media (max-width: 720px) {
-            width: 9vw;
+            height: 6vw;
         }
     }
 
@@ -42,7 +47,7 @@ export const HeaderContainer = styled.header`
         display: none;  /* Oculta o botão em telas maiores */
         align-items: center;
         justify-content: center;
-        font-size: 8vw;
+        font-size: 6.5vw;
         position: relative;
         z-index: 2;
         transition-duration: .2s;
@@ -55,6 +60,8 @@ export const HeaderContainer = styled.header`
 
         @media (max-width: 720px) {
             display: flex;  /* Exibe o botão em telas menores */
+            margin-top: -.2vw;
+            margin-right: -.5vw;
         }
     }
 
@@ -88,14 +95,18 @@ export const HeaderContainer = styled.header`
             transition-duration: .2s;
             font-weight: 700;
             /* backdrop-filter: ${props => (props.$scrolled ? 'blur(1px)' : 'none')}; */
-            padding: 0vw .1vw;
+            padding: .4vw .1vw;
 
             &:hover {
                 transform: scale(1.1);
             }
 
+            &.active {
+                border-bottom: .2vw solid white;
+            }
+
             p {
-                font-size: 2.1vw;
+                font-size: 1.8vw;
                 color: ${props => (props.$scrolled ? '#1782A5' : 'white')};
                 font-weight: ${props => (props.$scrolled ? '700' : '400')};
                 filter: ${props => (props.$scrolled ? 'drop-shadow(0px 1px 1px #fff5)' : 'none')};

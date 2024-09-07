@@ -83,47 +83,18 @@ export const ContainerQuemSomos = styled.section`
                 margin: 10% 0 5%;
             }
         }
-        p {
-            /* font-size: 2.1vw; */
-            font-size: 1.8vw;
-            /* line-height: 3.12vw; */
-            line-height: 1.4;
-            @media (max-width: 720px) {
-                font-size: 4.4vw;
-                line-height: 5vw;
-            }
-            b {
-                /* font-size: 2.34vw; */
-                font-size: 1.9vw;
-                @media (max-width: 720px) {
-                    font-size: 4.2vw;
-                }
-            }
-        }
     }
 
     .boxtxt2 {
         position: relative;
         z-index: 1;
-        margin: 19vw 0 0;
-
-        p {
-            /* font-size: 2.5vw; */
-            font-size: 2vw;
-            /* line-height: 4vw; */
-            line-height: 1.6;
-            font-weight: 600;
-            @media (max-width: 720px) {
-                font-size: 4.5vw;
-                line-height: 5vw;
-            }
-        }
+        margin: 5vw 0 0;
     }
 
     .swiper {
         position: relative;
         z-index: 1;
-        margin: 7vw 0 0;
+        margin: 5vw 0 0;
         padding-bottom: 5vw;
         @media (max-width: 720px) {
             padding-bottom: 9vw;
@@ -202,25 +173,18 @@ export const ContainerQuemSomos = styled.section`
     .boxtxt3 {
         display: flex;
         flex-direction: column;
-        gap: 3.4vw;
-        margin: 18.3vw 0 0;
+        gap: 2vw;
+        margin: 5vw 0 0;
         position: relative;
         z-index: 1;
-        p {
-            /* font-size: 2.1vw; */
-            font-size: 1.8vw;
-            /* line-height: 3.12vw; */
-            line-height: 1.4;
+        h2 {
+            /* font-size: 4.6vw; */
+            font-size: 3vw;
+            margin: 0;
+            color: var(--color07);
             @media (max-width: 720px) {
-                line-height: 5vw;
-                font-size: 4.2vw;
-            }
-            b {
-                /* font-size: 2.34vw; */
-                font-size: 1.9vw;
-                @media (max-width: 720px) {
-                    font-size: 4.2vw;
-                }
+                font-size: 6vw;
+                margin: 10% 0 5%;
             }
         }
     }
@@ -288,13 +252,13 @@ export const ContainerQuemSomos = styled.section`
                 p {
                     text-align: center;
                     /* font-size: 1.8vw; */
-                    font-size: 1.6vw;
+                    /* font-size: 1.4vw; */
                     /* line-height: 2.55vw; */
-                    line-height: 1.4;
+                    /* line-height: 1.4; */
                     margin: 1.5vw 0 0;
                     @media (max-width: 720px) {
-                        line-height: 5vw;
-                        font-size: 4vw;
+                        /* line-height: 5vw; */
+                        /* font-size: 4vw; */
                     }
                 }
             }
