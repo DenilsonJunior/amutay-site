@@ -43,14 +43,13 @@ function PorQue() {
                 {/* <img className='fumaca fumaca1' src="./assets/img/fmc2.png" alt="" />
                 <img className='fumaca fumaca2' src="./assets/img/fmc2.png" alt="" /> */}
 
-                <h2 className=''>Porque Amutay?</h2>
+                <h2 className=''>Por que Amutay?</h2>
                 {/* <video className='anima2' src="" controls poster='./assets/img/video.png'></video> */}
             </div>
 
             <div className="newBG">
                 <div className="boxText1 anima3">
-                    <p><b>Amutay representa nosso compromisso de construir e compartilhar conhecimento</b></p>
-                    <p>Desenvolvemos um <b>trabalho personalizado</b>, pois sabemos que realidades distintas demandam <b>soluções específicas</b>.</p>
+                    <p><b>Amutay representa nosso compromisso de construir e compartilhar conhecimento.</b> Desenvolvemos um <b>trabalho personalizado</b>, pois sabemos que realidades distintas demandam <b>soluções específicas</b>.</p>
                     <p>Nossa <b>estratégia metodológica</b> permite perceber e <b>compreender diferentes contextos</b>, tornando as experiências educativas mais significativas e potentes.</p>
                 </div>
             </div>

@@ -88,7 +88,7 @@ export const ContainerQuemSomos = styled.section`
     .boxtxt2 {
         position: relative;
         z-index: 1;
-        margin: 5vw 0 0;
+        margin: 3vw 0 0;
     }
 
     .swiper {

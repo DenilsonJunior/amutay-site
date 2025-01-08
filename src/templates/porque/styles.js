@@ -89,6 +89,7 @@ export const ContainerPorQue = styled.section`
 
 
     .newBG {
+        background-attachment: fixed;
         background-color: red;
         margin-top: -25vw;
         padding: 30vw 10.4vw 8vw;

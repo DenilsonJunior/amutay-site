@@ -54,7 +54,7 @@ function QuemSomos() {
             <img className='fumaca fumaca2' src="./assets/img/fmc1.png" alt="" />
             
             <div className='boxtxt1 anima1'>
-                <h2>Quem Somos?</h2>
+                <h2>Quem somos?</h2>
                 <p><b>Somos uma Consultoria Educacional que desenvolve experiências personalizadas e de alto impacto.</b></p>
                 <p>Oferecemos consultoria, gestão e elaboração de <b>soluções educacionais</b> voltadas para o desenvolvimento de trilhas de aprendizagem com <b>formação</b> <b>virtual</b>, <b>híbrida</b> e <b>presencial</b>.</p>
             </div>
@@ -112,7 +112,7 @@ function QuemSomos() {
                         <h3>Marianne Marimon</h3>
                         <p>Consultora de aprendizagem, gestora de projetos e professora é especialista no desenvolvimento de soluções educativas digitais, hibridas ou presenciais nos mais diferentes contextos. Possui mestrado em Educação científica e tecnológica e especialização em trabalho interdisciplinar.</p>
                     </div>
-                    <a href="https://www.linkedin.com/in/leila-paiter/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/mariannemarimon/" target="_blank" rel="noopener noreferrer">
                         <div className="box">
                             <img className='icoLink' src="./assets/img/linkdin.png" alt="" />
                         </div>
@@ -125,7 +125,7 @@ function QuemSomos() {
                         <h3>Leila Paiter</h3>
                         <p>Gestora de projetos e operações, especialista em ensino e aprendizagem e professora. Atua no desenvolvimento de soluções educativas digitais, hibridas ou presenciais nos mais diferentes contextos. Possui mestrado em Educação científica e tecnológica e especialização em trabalho interdisciplinar.</p>
                     </div>
-                    <a href="https://www.linkedin.com/in/mariannemarimon/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/leila-paiter/" target="_blank" rel="noopener noreferrer">
                         <div className="box">
                             <img className='icoLink' src="./assets/img/linkdin.png" alt="" />
                         </div>

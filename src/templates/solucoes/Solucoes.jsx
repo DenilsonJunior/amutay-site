@@ -47,7 +47,7 @@ function Solucoes() {
     return (
         <ContainerSolucoes className='max-conteudo' id="solucoes">
             <div className="boxText0 anima0">
-                <h2 className=''>Nossa Entrega</h2>
+                <h2 className=''>Soluções</h2>
                 <p>Contamos com diversos tipos de entregáveis para criar uma jornada formativa diferenciada, combinando linguagens e formatos de navegação distintos para maximizar o engajamento e a aprendizagem.</p>
             </div>
             <Swiper
@@ -55,7 +55,7 @@ function Solucoes() {
                 centeredSlides={true}
                 slidesPerView={1}
                 autoplay={{
-                    delay: 5000,
+                    delay: 4000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -133,8 +133,8 @@ function Solucoes() {
                 </SwiperSlide>
             </Swiper>
             <div className="boxText1 anima2">
-                <p>Nosso escopo de trabalho contempla o mergulho, diagnóstico e gestão de todas as etapas de construção do percurso de formação. Ficamos responsáveis pelo desenho da estratégia e desenvolvimento da solução de aprendizagem, assim como todas as etapas operacionais, como o design de aprendizagem, revisão ortográfica, validações, design gráfico,  diagramação, programação e acessibilidade, até que tudo estar pronto para a publicação na plataforma LMS.</p>
-                <p>Entre em contato para conhecer mais sobre o nosso trabalho!  ​</p>
+                <p>Nosso escopo de trabalho contempla o mergulho, diagnóstico e gestão de todas as etapas de construção do percurso de formação. Ficamos responsáveis pelo desenho da estratégia e desenvolvimento da solução de aprendizagem, assim como todas as etapas operacionais, como o design de aprendizagem, revisão ortográfica, validações, design gráfico,  diagramação, programação e acessibilidade, até tudo estar pronto para a publicação na plataforma LMS.</p>
+                <p>Entre em contato para conhecer mais sobre o nosso trabalho!</p>
             </div>         
         </ContainerSolucoes>
     );

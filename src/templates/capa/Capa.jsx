@@ -20,7 +20,7 @@ function Capa() {
                     centeredSlides={true}
                     slidesPerView={1}
                     autoplay={{
-                        delay: 2000,
+                        delay: 2500,
                         disableOnInteraction: false,
                     }}
                     pagination={{
@@ -31,13 +31,13 @@ function Capa() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <h1 className='title'>Conheça nossas soluções educacionais.</h1>
+                        <h1 className='title'>Conheça nossas soluções de aprendizagem</h1>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <h2 className='subtitle'>Conte com nossos talentos e nossa experiência para desenvolver soluções personalizadas.</h2>
+                        <h2 className='subtitle'>Conte com nossos talentos e nossa experiência para desenvolver soluções personalizadas</h2>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <h2 className='subtitle'>Potencialize a qualidade das suas experiências educacionais.</h2>
+                        <h2 className='subtitle'>Potencialize a qualidade das suas experiências educacionais</h2>
                     </SwiperSlide>
                 </Swiper>
             </div>

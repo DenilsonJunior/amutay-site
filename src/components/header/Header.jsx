@@ -53,7 +53,7 @@ const Header = () => {
                     <p>Quem somos</p>
                 </a>
                 <a href="#porque" className={activeSection === 'porque' ? 'active' : ''}>
-                    <p>Porque</p>
+                    <p>Por que</p>
                 </a>
                 <a href="#solucoes" className={activeSection === 'solucoes' ? 'active' : ''}>
                     <p>Soluções</p>

@@ -85,7 +85,7 @@ export const ContainerCapa = styled.section`
 
             .title {
                 /* font-size: 4.61vw; */
-                font-size: 3.8vw;
+                font-size: 3.6vw;
                 width: 50vw;
                 height: 100%;
 
