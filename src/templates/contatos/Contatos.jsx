@@ -43,18 +43,18 @@ function Contatos() {
         <ContainerContatos className='max-conteudo' id="contatos">
             <img className='logo2' src="./assets/img/logo.png" alt="Logo" />
             <div className='redes'>
-                <a href="http://" target="_blank" rel="noopener noreferrer" className='anima1'>
+                <a href="mailto:leila@amutay.com.br?subject=Informações&body=Olá,%20gostaria%20de%20mais%20detalhes." target="_blank" rel="noopener noreferrer" className='anima1'>
                     <img src="./assets/img/ico-mail.png" alt="" />
                 </a>
                 <a href="https://www.linkedin.com/company/amutay-educa%C3%A7%C3%A3o/" target="_blank" rel="noopener noreferrer" className='anima2'>
                     <img src="./assets/img/ico-linkdin.png" alt="" />
                 </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" className='anima3'>
+                <a href="https://wa.me/48991618329" target="_blank" rel="noopener noreferrer" className='anima3'>
                     <img src="./assets/img/ico-whats.png" alt="" />
                 </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" className='anima4'>
+                {/* <a href="http://" target="_blank" rel="noopener noreferrer" className='anima4'>
                     <img src="./assets/img/ico-insta.png" alt="" />
-                </a>
+                </a> */}
             </div>
             <div className='anima5'>
                 {/* <p>Estrada Vereador Onildo Lemos, nº 331, unidade 308 – Bloco C, Ingleses do Rio Vermelho 88058-700 Florianópolis, SC</p> */}
