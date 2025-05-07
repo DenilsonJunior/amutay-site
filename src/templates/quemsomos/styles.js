@@ -121,6 +121,10 @@ export const ContainerQuemSomos = styled.section`
         background-color: #F2FBFC;
         margin-top: 3vw;
         position: relative;
+        @media (max-width: 720px) {
+            padding: 10vw 0 15vw;
+            gap: 1vw;
+        }
 
         .flexIcons {
             width: 100%;
@@ -131,14 +135,14 @@ export const ContainerQuemSomos = styled.section`
             @media (max-width: 720px) {
                 margin-top: 5rem;
                 flex-wrap: wrap;
-                gap: 5rem;
+                gap: 4rem;
                 padding: 0 5vw;
             }
 
             img {
                 height: 5.5vw;
                 @media (max-width: 720px) {
-                    height: 8rem;
+                    height: 12vw;
                     width: 100%;
                     object-fit: contain;
                 }
