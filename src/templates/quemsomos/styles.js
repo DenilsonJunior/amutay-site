@@ -143,8 +143,9 @@ export const ContainerQuemSomos = styled.section`
                 height: 5.5vw;
                 @media (max-width: 720px) {
                     height: 12vw;
-                    width: 100%;
+                    width: 80%;
                     object-fit: contain;
+                    margin: 0 auto;
                 }
             }
         }
@@ -272,6 +273,7 @@ export const ContainerQuemSomos = styled.section`
                 font-weight: 400;
                 @media (max-width: 720px) {
                     font-size: 4.2vw;
+                    margin-top: 1rem;
                 }
             }
         }
