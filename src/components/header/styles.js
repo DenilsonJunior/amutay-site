@@ -6,10 +6,11 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2vw 3vw;
+    padding: 1.5vw 3vw;
     z-index: 2;
     transition: background-color 0.3s ease-in-out;
-    background-color: #003A43;
+    // background-color: #003A43;
+    background-image: linear-gradient(to bottom right, #20A6A2, #1782A5);
     /* animation: header 1s linear; */
     @media (max-width: 720px) {
         height: 14vw;

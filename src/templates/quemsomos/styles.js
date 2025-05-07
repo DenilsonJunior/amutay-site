@@ -16,14 +16,14 @@ export const ContainerQuemSomos = styled.section`
     }
 
     .fumaca1 {
-        top: 25vw;
+        top: 0vw;
         animation: fumaca2 40s infinite;
         @media (max-width: 720px) {
             top: 55vw;
         }
     }
     .fumaca2 {
-        top: 35vw;
+        top: 5vw;
         animation: fumaca1 40s infinite;
         @media (max-width: 720px) {
             top: 80vw;
@@ -71,37 +71,127 @@ export const ContainerQuemSomos = styled.section`
     }
 
     .boxtxt1 {
+        padding: 0 10.4vw;
         position: relative;
         z-index: 1;
-        h2 {
-            /* font-size: 4.6vw; */
-            font-size: 3vw;
-            margin: 5% 0 3%;
-            color: var(--color07);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 720px) {
+            padding: 0 5vw;
+            flex-direction: column;
+        }
+
+        .box-text {
+            width: 30vw;
             @media (max-width: 720px) {
-                font-size: 6vw;
-                margin: 0% 0 5%;
+                width: 100%;
+            }
+
+            h2 {
+                /* font-size: 4.6vw; */
+                font-size: 3vw;
+                margin: 5% 0 3%;
+                color: var(--color07);
+                @media (max-width: 720px) {
+                    font-size: 6vw;
+                    margin: 0% 0 5%;
+                }
+            }
+        }
+
+        .box-img {
+            width: 45vw;
+            @media (max-width: 720px) {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .boxtxt1b {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+        padding: 4vw 0;
+        background-color: #F2FBFC;
+        margin-top: 3vw;
+        position: relative;
+
+        .flexIcons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 11.4vw;
+            @media (max-width: 720px) {
+                margin-top: 5rem;
+                flex-wrap: wrap;
+                gap: 5rem;
+                padding: 0 5vw;
+            }
+
+            img {
+                height: 5.5vw;
+                @media (max-width: 720px) {
+                    height: 8rem;
+                    width: 100%;
+                    object-fit: contain;
+                }
             }
         }
     }
 
     .boxtxt2 {
+        background-image: url(./assets/img/imgnova06.png);
+        background-attachment: fixed !important;
+        background-size: cover;
+        background-position: center;
         position: relative;
         z-index: 1;
-        margin: 3vw 0 0;
+        width: 100%;
+        padding: 10vw 10.4vw;
+        filter: none;
+        overflow: auto;
+        @media (max-width: 720px) {
+            padding: 10vw 5vw;
+        }
+        p {
+            color: white;
+            font-weight: 500;
+        }
+    }
+
+    .boxtext2b {
+        padding: 5vw 10.4vw 0;
+        @media (max-width: 720px) {
+            padding: 10vw 5vw 0;
+        }
     }
 
     .swiper {
         position: relative;
         z-index: 1;
-        margin: 5vw 0 0;
-        padding-bottom: 5vw;
+        margin: 5vw auto 0;
+        padding-bottom: 0;
+        
+        height: 31vw;
         @media (max-width: 720px) {
             padding-bottom: 9vw;
+            height: auto;
+        }
+
+        .swiper-slide {
+            // opacity: 0;
         }
 
         .swiper-button-prev,
         .swiper-button-next {
+            opacity: 1;
             top: calc(50% - 2.5vw);
             width: 2.5vw;
             height: 2.5vw;
@@ -129,9 +219,20 @@ export const ContainerQuemSomos = styled.section`
         .swiper-wrapper {
             display: flex;
             align-items: center;
+
+            .swiper-slide-active {
+                .cardSlide {
+                    transform: scale(1);
+                    transition-duration: .3s;
+                    p {
+                        font-weight: 600;
+                    }
+                }
+            }
         }
 
         .swiper-pagination {
+            display: none;
             .swiper-pagination-bullet {
                 border: solid .15vw var(--color07);
                 &.swiper-pagination-bullet-active {
@@ -141,15 +242,16 @@ export const ContainerQuemSomos = styled.section`
         }
         
         .cardSlide {
-            width: 85%;
+            width: 100%;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
+            gap: 2vw;
             align-items: center;
-            padding: 2.5vw 5vw 5.1vw;
-            background-color: var(--color08);
-            border-radius: 4rem;
-            box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
+            padding: 0;
+            transform: scale(0.7);
+            
+            
             @media (max-width: 720px) {
                 border-radius: 1rem;
                 width: 95%;
@@ -162,7 +264,8 @@ export const ContainerQuemSomos = styled.section`
             p {
                 text-align: center;
                 /* font-size: 1.93vw; */
-                font-size: 1.8vw;
+                font-size: 1.6vw;
+                font-weight: 400;
                 @media (max-width: 720px) {
                     font-size: 4.2vw;
                 }
@@ -174,9 +277,13 @@ export const ContainerQuemSomos = styled.section`
         display: flex;
         flex-direction: column;
         gap: 2vw;
-        margin: 5vw 0 0;
+        margin: 3vw 0 0;
         position: relative;
         z-index: 1;
+        padding: 0 10.4vw;
+        @media (max-width: 720px) {
+            padding: 0vw 5vw;
+        }
         h2 {
             /* font-size: 4.6vw; */
             font-size: 3vw;
@@ -197,10 +304,13 @@ export const ContainerQuemSomos = styled.section`
         justify-content: center;
         gap: 3vw;
         margin: 10vw 0 0;
+        padding: 0 10.4vw;
+        margin-bottom: -4vw;
 
         @media (max-width: 720px) {
             flex-direction: column;
             gap: 15vw;
+            padding: 10vw 5vw 0;
         }
 
         .card {
@@ -267,8 +377,7 @@ export const ContainerQuemSomos = styled.section`
                 background-color: var(--color07);
                 display: flex;
                 align-items: center;
-                gap: 1.5vw;
-                padding: .8rem 3rem .8rem .8rem;
+                padding: .8rem 1rem;
                 border-radius: 3rem;
                 border: none;
                 position: absolute;
@@ -277,7 +386,7 @@ export const ContainerQuemSomos = styled.section`
                 text-decoration: none;
                 transition-duration: .3s;
                 @media (max-width: 720px) {
-                    padding: .8rem 2rem .8rem .8rem;
+                    padding: .8rem 1rem;
                 }
 
                 &:hover {

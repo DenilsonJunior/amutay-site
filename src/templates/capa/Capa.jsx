@@ -20,7 +20,7 @@ function Capa() {
                     centeredSlides={true}
                     slidesPerView={1}
                     autoplay={{
-                        delay: 2500,
+                        delay: 50000,
                         disableOnInteraction: false,
                     }}
                     pagination={{

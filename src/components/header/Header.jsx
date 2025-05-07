@@ -52,14 +52,14 @@ const Header = () => {
                 <a href="#quem" className={activeSection === 'quem' ? 'active' : ''}>
                     <p>Quem somos</p>
                 </a>
-                <a href="#porque" className={activeSection === 'porque' ? 'active' : ''}>
+                {/* <a href="#porque" className={activeSection === 'porque' ? 'active' : ''}>
                     <p>Por que</p>
-                </a>
+                </a> */}
                 <a href="#solucoes" className={activeSection === 'solucoes' ? 'active' : ''}>
                     <p>Soluções</p>
                 </a>
                 <a href="#contatos" className={activeSection === 'contatos' ? 'active' : ''}>
-                    <p>Contatos</p>
+                    <p>Contato</p>
                 </a>
             </div>
         </HeaderContainer>

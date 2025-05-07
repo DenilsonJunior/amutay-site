@@ -10,9 +10,10 @@ export const ContainerCapa = styled.section`
     max-height: 115vh;
     display: flex;
     align-items: center;
-    padding-top: 8vw;
+    padding: 8vw 10.4vw 0;
     @media (max-width: 720px) {
         aspect-ratio: 1.5 / 2.6;
+        padding: 8vw 5vw 0;
     }
 
     img.logo {
@@ -60,7 +61,7 @@ export const ContainerCapa = styled.section`
                 }
             }
             @media (max-width: 720px) {
-                padding-bottom: 10%;
+                // padding-bottom: 10%;
             }
 
             .swiper-button-prev,
@@ -85,13 +86,14 @@ export const ContainerCapa = styled.section`
 
             .title {
                 /* font-size: 4.61vw; */
-                font-size: 3.6vw;
+                // font-size: 3.6vw;
+                font-size: 2.8vw;
                 width: 50vw;
                 height: 100%;
 
                 @media (max-width: 720px) {
-                    font-size: 6.8vw;
-                    width: 85vw;
+                    font-size: 5.5vw;
+                    width: 100%;
                 }
             }
 

@@ -43,7 +43,6 @@ function PorQue() {
                 {/* <img className='fumaca fumaca1' src="./assets/img/fmc2.png" alt="" />
                 <img className='fumaca fumaca2' src="./assets/img/fmc2.png" alt="" /> */}
 
-                <h2 className=''>Por que Amutay?</h2>
                 {/* <video className='anima2' src="" controls poster='./assets/img/video.png'></video> */}
             </div>
 

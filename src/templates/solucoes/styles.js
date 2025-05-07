@@ -2,8 +2,10 @@ import styled from "styled-components"
 
 export const ContainerSolucoes = styled.section`
     /* background-color: #0005; */
-    padding-top: 8.2vw;
-    padding-bottom: 8.2vw;
+    padding: 8vw 10.4vw;
+    @media (max-width: 720px) {
+        padding: 15vw 5vw 5vw;
+    }
 
     .anima0, .anima1, .anima2 {
         transform: translateY(30rem);
@@ -29,6 +31,91 @@ export const ContainerSolucoes = styled.section`
     p {
         margin-top: 2vw;
     }
+
+    .accordion-wrapper {
+        margin-bottom: 2rem;
+
+        .accordion-item {
+            overflow: hidden;
+
+            button {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: .5vw 1vw;
+                border-radius: 1vw;
+                border: none;
+                background-image: linear-gradient(to bottom right, #20A6A2, #1782A5);
+                margin: 1vw 0 0;
+                position: relative;
+                z-index: 1;
+                transition: filter 0.3s ease;
+                @media (max-width: 720px) {
+                    padding: 3vw;
+                    margin: 2vw 0 0;
+                }
+
+                p, p i {
+                    color: white;
+                    font-size: 1.5vw;
+                    font-weight: 700;
+                    font-family: 'Montserrat';
+                    @media (max-width: 720px) {
+                        font-size: 4.5vw;
+                    }
+                }
+
+                span {
+                    display: inline-block;
+                    transition: transform 0.3s ease;
+
+                    img {
+                        width: 2vw;
+                        @media (max-width: 720px) {
+                            width: 5vw;
+                        }
+                    }
+                }
+            }
+
+            button:hover {
+                filter: brightness(1.1);
+                cursor: pointer;
+                transform: scale(1);
+            }
+
+            .accordion-content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s ease, padding 0.5s ease;
+                background-color: white;
+                border-radius: 1vw;
+                // margin-top: -1vw;
+                padding: 0 2vw;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            &.open {
+                .accordion-content {
+                    max-height: 500px; // ajuste conforme necessário
+                    padding: 2vw;
+                    @media (max-width: 720px) {
+                        max-height: 1000px;
+                        padding: 5vw;
+                    }
+                }
+
+                button span {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
 
     .swiper {
         margin-top: 6vw;
@@ -90,16 +177,13 @@ export const ContainerSolucoes = styled.section`
         margin-top: 5vw;
         display: flex;
         flex-direction: column;
-        background-color: white;
-        padding: 3vw 4vw;
-        border-radius: 2.5vw;
-        box-shadow: 0rem 0.3rem 1rem 0.1rem #0003;
+
         @media (max-width: 720px) {
             margin-top: 8vw;
-            padding: 6vw;
+            padding: 6vw 0;
         }
-        p {
-            margin: 0;
+        h3 {
+            text-align: center;
         }
         
         p + p {

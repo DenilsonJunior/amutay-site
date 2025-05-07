@@ -91,14 +91,13 @@ export const ContainerPorQue = styled.section`
     .newBG {
         background-attachment: fixed;
         background-color: red;
-        margin-top: -25vw;
-        padding: 30vw 10.4vw 8vw;
+        padding: 8vw 10.4vw;
         position: relative;
         background-image: url(./assets/img/mato2.jpg);
         background-size: cover;
         background-position: bottom;
         @media (max-width: 720px) {
-            padding: 30vw 2rem 8vw;
+            padding: 10vw 5vw;
         }
 
         .boxText1 {

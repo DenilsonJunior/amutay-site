@@ -54,50 +54,94 @@ function QuemSomos() {
             <img className='fumaca fumaca2' src="./assets/img/fmc1.png" alt="" />
             
             <div className='boxtxt1 anima1'>
-                <h2>Quem somos?</h2>
-                <p><b>Somos uma Consultoria Educacional que desenvolve experiências personalizadas e de alto impacto.</b></p>
-                <p>Oferecemos consultoria, gestão e elaboração de <b>soluções educacionais</b> voltadas para o desenvolvimento de trilhas de aprendizagem com <b>formação</b> <b>virtual</b>, <b>híbrida</b> e <b>presencial</b>.</p>
+                <div className="box-text">
+                    <h2>Quem somos</h2>
+                    <p><b>Somos uma Consultoria Educacional que desenvolve experiências personalizadas e de alto impacto.</b></p>
+                    <p>Oferecemos consultoria, gestão e elaboração de <b>soluções educacionais</b> voltadas para o desenvolvimento de trilhas de aprendizagem com <b>formação</b> <b>virtual</b>, <b>híbrida</b> e <b>presencial</b>.</p>
+                </div>
+                <div className="box-img">
+                    <img src="./assets/img/imgnova01.png" alt="" />
+                </div>
+            </div>
+
+            <div className="boxtxt1b anima1">
+                <p><b>Conheça alguns dos nossos clientes:</b></p>
+                <div className="flexIcons">
+                    <img src="./assets/img/imgnova02.png" alt="" />
+                    <img src="./assets/img/imgnova03.png" alt="" />
+                    <img src="./assets/img/imgnova04.png" alt="" />
+                    <img src="./assets/img/imgnova05.png" alt="" />
+                </div>
             </div>
 
             <div className='boxtxt2 anima1'>
                 <p>A paixão e o comprometimento que colocamos em cada projeto desenvolvido são resultado de um conjunto variado de vivências. Os caminhos pessoais e profissionais de quem compõe a nossa empresa constroem pontes que unem conhecimentos, competências e qualidades.</p>
-                <p>Confira algumas das qualificações que os profissionais que atuam na Amutay compartilham, para garantir a qualidade e o nível de conhecimento especializado em cada entrega:​</p>
             </div>
 
-            <Swiper
-                spaceBetween={50}
-                centeredSlides={true}
-                slidesPerView={1}
-                autoplay={{
-                    delay: 50000,
-                    disableOnInteraction: false,
-                }}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper anima3"
-            >
-                <SwiperSlide>
-                    <div className='cardSlide'>
-                        <img className='imgSlide' src="./assets/img/slide1.png" alt="" />
-                        <p>Níveis de especialização e mestrado em áreas como Educação, Comunicação e Tecnologia.</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="cardSlide">
-                        <img className='imgSlide' src="./assets/img/slide2.png" alt="" />
-                        <p>Formação acadêmica interdisciplinar + multidisciplinar.</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="cardSlide">
-                        <img className='imgSlide' src="./assets/img/slide3.png" alt="" />
-                        <p>Trajetórias profissionais que contam com experiência em sala de aula, formação de professores, educação corporativa, projetos sociais, entre outros.</p>
-                    </div>
-                </SwiperSlide>
-            </Swiper>
+            <div className="boxtext2b">
+                <p>Confira algumas das qualificações que cada profissional que atua na Amutay compartilha, para garantir a qualidade e o nível de conhecimento especializado em cada entrega:​</p>
+                <Swiper
+                    spaceBetween={10}
+                    centeredSlides={true}
+                    slidesPerView={3}
+                    loop={true}
+                    autoplay={{
+                        delay: 50000,
+                        disableOnInteraction: false,
+                    }}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    navigation={true}
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 1, // Para telas menores que 720px
+                        },
+                        720: {
+                            slidesPerView: 3, // Para telas a partir de 720px
+                        }
+                    }}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="mySwiper anima3"
+                >
+                    <SwiperSlide>
+                        <div className='cardSlide'>
+                            <img className='imgSlide' src="./assets/img/slide1.png" alt="" />
+                            <p>Níveis de especialização e mestrado em áreas como Educação, Comunicação e Tecnologia.</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="cardSlide">
+                            <img className='imgSlide' src="./assets/img/slide2.png" alt="" />
+                            <p>Formação acadêmica interdisciplinar + multidisciplinar.</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="cardSlide">
+                            <img className='imgSlide' src="./assets/img/slide3.png" alt="" />
+                            <p>Trajetórias profissionais que contam com experiência em sala de aula, formação de professores, educação corporativa, projetos sociais, entre outras.</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='cardSlide'>
+                            <img className='imgSlide' src="./assets/img/slide1.png" alt="" />
+                            <p>Níveis de especialização e mestrado em áreas como Educação, Comunicação e Tecnologia.</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="cardSlide">
+                            <img className='imgSlide' src="./assets/img/slide2.png" alt="" />
+                            <p>Formação acadêmica interdisciplinar + multidisciplinar.</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="cardSlide">
+                            <img className='imgSlide' src="./assets/img/slide3.png" alt="" />
+                            <p>Trajetórias profissionais que contam com experiência em sala de aula, formação de professores, educação corporativa, projetos sociais, entre outros.</p>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
 
             <div className='boxtxt3 anima4'>
                 <h2>Uma empresa feita por mulheres!</h2>
@@ -110,26 +154,24 @@ function QuemSomos() {
                     <img className='pers' src="./assets/img/mari.png" alt="" />
                     <div className="boxtext">
                         <h3>Marianne Marimon</h3>
-                        <p>Consultora de aprendizagem, gestora de projetos e professora é especialista no desenvolvimento de soluções educativas digitais, hibridas ou presenciais nos mais diferentes contextos. Possui mestrado em Educação científica e tecnológica e especialização em trabalho interdisciplinar.</p>
+                        <p>Consultora de aprendizagem, gestora de projetos e professora. É especialista no desenvolvimento de soluções educativas digitais, híbridas ou presenciais nos mais diferentes contextos. Possui mestrado em Educação científica e tecnológica e especialização em trabalho interdisciplinar.</p>
                     </div>
                     <a href="https://www.linkedin.com/in/mariannemarimon/" target="_blank" rel="noopener noreferrer">
                         <div className="box">
                             <img className='icoLink' src="./assets/img/linkdin.png" alt="" />
                         </div>
-                        <p>Acessar</p>
                     </a>
                 </div>
                 <div className='card card2'>
                     <img className='pers' src="./assets/img/leila.png" alt="" />
                     <div className="boxtext">
                         <h3>Leila Paiter</h3>
-                        <p>Gestora de projetos e operações, especialista em ensino e aprendizagem e professora. Atua no desenvolvimento de soluções educativas digitais, hibridas ou presenciais nos mais diferentes contextos. Possui mestrado em Educação científica e tecnológica e especialização em trabalho interdisciplinar.</p>
+                        <p>Gestora de projetos e operações, especialista em ensino e aprendizagem e professora. Atua no desenvolvimento de soluções educativas digitais, híbridas ou presenciais nos mais diferentes contextos. Possui mestrado em Educação científica e tecnológica e especialização em trabalho interdisciplinar.</p>
                     </div>
                     <a href="https://www.linkedin.com/in/leila-paiter/" target="_blank" rel="noopener noreferrer">
                         <div className="box">
                             <img className='icoLink' src="./assets/img/linkdin.png" alt="" />
                         </div>
-                        <p>Acessar</p>
                     </a>
                 </div>
             </div>
